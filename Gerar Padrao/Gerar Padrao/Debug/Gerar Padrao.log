@@ -1,0 +1,9 @@
+﻿  main.cpp
+c:\users\rodrigo\documents\c_c++\processamento de imagem\teste\gerar padrao\gerar padrao\main.cpp(526): warning C4244: '=' : conversão de 'double' para 'uchar', possível perda de dados
+c:\users\rodrigo\documents\c_c++\processamento de imagem\teste\gerar padrao\gerar padrao\main.cpp(528): warning C4244: '=' : conversão de 'double' para 'uchar', possível perda de dados
+c:\users\rodrigo\documents\c_c++\processamento de imagem\teste\gerar padrao\gerar padrao\main.cpp(530): warning C4244: '=' : conversão de 'double' para 'uchar', possível perda de dados
+c:\users\rodrigo\documents\c_c++\processamento de imagem\teste\gerar padrao\gerar padrao\main.cpp(542): warning C4244: '=' : conversão de 'double' para 'uchar', possível perda de dados
+c:\users\rodrigo\documents\c_c++\processamento de imagem\teste\gerar padrao\gerar padrao\main.cpp(544): warning C4244: '=' : conversão de 'double' para 'uchar', possível perda de dados
+c:\users\rodrigo\documents\c_c++\processamento de imagem\teste\gerar padrao\gerar padrao\main.cpp(546): warning C4244: '=' : conversão de 'double' para 'uchar', possível perda de dados
+c:\users\rodrigo\documents\c_c++\processamento de imagem\teste\gerar padrao\gerar padrao\main.cpp(823): warning C4244: 'argumento' : conversão de 'int' para 'float', possível perda de dados
+  Gerar Padrao.vcxproj -> C:\Users\Rodrigo\Documents\C_C++\Processamento de Imagem\Teste\Gerar Padrao\Debug\Gerar Padrao.exe
