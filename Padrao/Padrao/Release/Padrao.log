@@ -1,0 +1,5 @@
+﻿  main.cpp
+main.cpp(805): warning C4244: 'argumento' : conversão de 'int' para 'float', possível perda de dados
+  Gerando código
+  Finalizada a geração de código
+  Padrao.vcxproj -> C:\Users\Rodrigo\Documents\C_C++\Processamento de Imagem\Teste\Padrao\Release\Padrao.exe
