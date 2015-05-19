@@ -1,0 +1,16 @@
+﻿Build started 2014-01-21 1:59:55 PM.
+     1>Project "C:\Users\Rodrigo\Documents\C_C++\Processamento de Imagem\Teste\Processamento\Processamento\Processamento.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /IC:\opencv\build\include\opencv /IC:\opencv\build\include /Zi /nologo /W1 /WX- /O2 /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt main.cpp stdafx.cpp
+         main.cpp
+         stdafx.cpp
+         Gerando Código...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Rodrigo\Documents\C_C++\Processamento de Imagem\Teste\Processamento\x64\Debug\Processamento.exe" /NOLOGO /LIBPATH:C:\opencv\build\x64\vc11\lib opencv_calib3d247d.lib opencv_contrib247d.lib opencv_core247d.lib opencv_features2d247d.lib opencv_flann247d.lib opencv_gpu247d.lib opencv_highgui247d.lib opencv_imgproc247d.lib opencv_legacy247d.lib opencv_ml247d.lib opencv_nonfree247d.lib opencv_objdetect247d.lib opencv_ocl247d.lib opencv_photo247d.lib opencv_stitching247d.lib opencv_superres247d.lib opencv_ts247d.lib opencv_video247d.lib opencv_videostab247d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:\Users\Rodrigo\Documents\C_C++\Processamento de Imagem\Teste\Processamento\x64\Debug\Processamento.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Rodrigo\Documents\C_C++\Processamento de Imagem\Teste\Processamento\x64\Debug\Processamento.lib" /MACHINE:X64 x64\Debug\main.obj
+         x64\Debug\stdafx.obj
+         Processamento.vcxproj -> C:\Users\Rodrigo\Documents\C_C++\Processamento de Imagem\Teste\Processamento\x64\Debug\Processamento.exe
+     1>Done Building Project "C:\Users\Rodrigo\Documents\C_C++\Processamento de Imagem\Teste\Processamento\Processamento\Processamento.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.11

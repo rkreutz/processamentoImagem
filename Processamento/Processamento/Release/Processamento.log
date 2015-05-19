@@ -1,0 +1,10 @@
+﻿  main.cpp
+main.cpp(244): warning C4244: '=' : conversão de 'double' para 'uchar', possível perda de dados
+main.cpp(246): warning C4244: '=' : conversão de 'double' para 'uchar', possível perda de dados
+main.cpp(248): warning C4244: '=' : conversão de 'double' para 'uchar', possível perda de dados
+main.cpp(348): warning C4244: '=' : conversão de 'double' para 'uchar', possível perda de dados
+main.cpp(349): warning C4244: '=' : conversão de 'double' para 'uchar', possível perda de dados
+main.cpp(350): warning C4244: '=' : conversão de 'double' para 'uchar', possível perda de dados
+  Gerando código
+  Finalizada a geração de código
+  Processamento.vcxproj -> C:\Users\Rodrigo\Documents\C_C++\Processamento de Imagem\Teste\Processamento\Release\Processamento.exe

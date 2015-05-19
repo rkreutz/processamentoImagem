@@ -1,0 +1,14 @@
+﻿Build started 2014-02-17 5:59:29 PM.
+     1>Project "C:\Users\Rodrigo\Documents\C_C++\Processamento de Imagem\Teste\Processamento\Processamento\Processamento.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /IC:\opencv\build\include\opencv /IC:\opencv\build\include /Zi /nologo /W1 /WX- /O2 /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc110.pdb" /Gd /TP /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Rodrigo\Documents\C_C++\Processamento de Imagem\Teste\Processamento\x64\Release\Processamento.exe" /NOLOGO /LIBPATH:C:\opencv\build\x64\vc11\lib opencv_calib3d247.lib opencv_contrib247.lib opencv_core247.lib opencv_features2d247.lib opencv_flann247.lib opencv_gpu247.lib opencv_highgui247.lib opencv_imgproc247.lib opencv_legacy247.lib opencv_ml247.lib opencv_nonfree247.lib opencv_objdetect247.lib opencv_ocl247.lib opencv_photo247.lib opencv_stitching247.lib opencv_superres247.lib opencv_ts247.lib opencv_video247.lib opencv_videostab247.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:\Users\Rodrigo\Documents\C_C++\Processamento de Imagem\Teste\Processamento\x64\Release\Processamento.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Rodrigo\Documents\C_C++\Processamento de Imagem\Teste\Processamento\x64\Release\Processamento.lib" /MACHINE:X64 x64\Release\main.obj
+         x64\Release\stdafx.obj
+         Processamento.vcxproj -> C:\Users\Rodrigo\Documents\C_C++\Processamento de Imagem\Teste\Processamento\x64\Release\Processamento.exe
+     1>Done Building Project "C:\Users\Rodrigo\Documents\C_C++\Processamento de Imagem\Teste\Processamento\Processamento\Processamento.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.68
