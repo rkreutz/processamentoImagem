@@ -1,0 +1,5 @@
+﻿  main.cpp
+main.cpp(51): warning C4101: 'e' : variável local não referenciada
+  Gerando código
+  Finalizada a geração de código
+  Windows XP OpenCV Test.vcxproj -> C:\Users\Rodrigo\Documents\C_C++\Processamento de Imagem\Teste\Windows XP OpenCV Test\Release\Windows XP OpenCV Test.exe
