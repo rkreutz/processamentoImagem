@@ -1,0 +1,10 @@
+- Shapes Load/Save parameter to file.
+- Overlay message (ff = 0; Scale = 7; thickness = 2)
+- Menu (aprimorar)
+
+Non Essentials:
+
+- Histogramas
+- RectangleShapes
+- Circle Shapes
+- ShapesMultiple
