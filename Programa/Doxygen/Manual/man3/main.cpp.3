@@ -1,0 +1,1282 @@
+.TH "main.cpp" 3 "Wed Mar 5 2014" "Version 1.0" "Programa" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+main.cpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stdafx\&.h'\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <cstdlib>\fP
+.br
+\fC#include 'opencv2/core/core\&.hpp'\fP
+.br
+\fC#include 'opencv2/flann/miniflann\&.hpp'\fP
+.br
+\fC#include 'opencv2/imgproc/imgproc\&.hpp'\fP
+.br
+\fC#include 'opencv2/photo/photo\&.hpp'\fP
+.br
+\fC#include 'opencv2/video/video\&.hpp'\fP
+.br
+\fC#include 'opencv2/features2d/features2d\&.hpp'\fP
+.br
+\fC#include 'opencv2/objdetect/objdetect\&.hpp'\fP
+.br
+\fC#include 'opencv2/calib3d/calib3d\&.hpp'\fP
+.br
+\fC#include 'opencv2/ml/ml\&.hpp'\fP
+.br
+\fC#include 'opencv2/highgui/highgui\&.hpp'\fP
+.br
+\fC#include 'opencv2/contrib/contrib\&.hpp'\fP
+.br
+\fC#include 'opencv2/core/core_c\&.h'\fP
+.br
+\fC#include 'opencv2/highgui/highgui_c\&.h'\fP
+.br
+\fC#include 'opencv2/imgproc/imgproc_c\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBAx\fP   11\&.935"
+.br
+.ti -1c
+.RI "#define \fBBx\fP   -6\&.7718"
+.br
+.ti -1c
+.RI "#define \fBCAMERA_SEARCH\fP   false"
+.br
+.ti -1c
+.RI "#define \fBCAMERA_ID\fP   1"
+.br
+.ti -1c
+.RI "#define \fBDRAWING_CONFIG_WINDOW\fP   'Referencia - Config'"
+.br
+.ti -1c
+.RI "#define \fBPROGRAM_WINDOW\fP   'Programa'"
+.br
+.ti -1c
+.RI "#define \fBTYPE_CIRCLE\fP   'CIRCLE'"
+.br
+.ti -1c
+.RI "#define \fBTYPE_RECT\fP   'RECT'"
+.br
+.ti -1c
+.RI "#define \fBTYPE_RECT2\fP   'RECT2'"
+.br
+.ti -1c
+.RI "#define \fBMAX_DRAWING_CIRCLE_RADIUS\fP   400"
+.br
+.ti -1c
+.RI "#define \fBMAX_DRAWING_RECT_BASE\fP   400"
+.br
+.ti -1c
+.RI "#define \fBMAX_DRAWING_RECT_HEIGHT\fP   400"
+.br
+.ti -1c
+.RI "#define \fBMAX_FONT_TYPE\fP   7"
+.br
+.ti -1c
+.RI "#define \fBMAX_FONT_SCALE\fP   30"
+.br
+.ti -1c
+.RI "#define \fBMAX_TEXT_OFFSET\fP   200"
+.br
+.ti -1c
+.RI "#define \fBMAX_LEFT_TEXT_OFFSET\fP   50"
+.br
+.ti -1c
+.RI "#define \fBOUTLINE_COLOR\fP   Scalar(0,255,0)"
+.br
+.ti -1c
+.RI "#define \fBOUTLINE_THICKNESS\fP   4"
+.br
+.ti -1c
+.RI "#define \fBTEXT_THICKNESS\fP   3"
+.br
+.ti -1c
+.RI "#define \fBFULL_WHEIGHT\fP   1\&.0"
+.br
+.ti -1c
+.RI "#define \fBTHREE_FOURTHS_WHEIGHT\fP   0\&.75"
+.br
+.ti -1c
+.RI "#define \fBHALF_WHEIGHT\fP   0\&.5"
+.br
+.ti -1c
+.RI "#define \fBONE_FOURTH_WHEIGHT\fP   0\&.25"
+.br
+.ti -1c
+.RI "#define \fBNO_WHEIGHT\fP   0"
+.br
+.ti -1c
+.RI "#define \fBszWidth\fP   29"
+.br
+.ti -1c
+.RI "#define \fBszHeight\fP   29"
+.br
+.ti -1c
+.RI "#define \fBdeltaGaussianBlur\fP   700"
+.br
+.ti -1c
+.RI "#define \fBminHue\fP   90"
+.br
+.ti -1c
+.RI "#define \fBminSat\fP   0"
+.br
+.ti -1c
+.RI "#define \fBminVal\fP   0"
+.br
+.ti -1c
+.RI "#define \fBmaxHue\fP   179"
+.br
+.ti -1c
+.RI "#define \fBmaxSat\fP   255"
+.br
+.ti -1c
+.RI "#define \fBmaxVal\fP   255"
+.br
+.ti -1c
+.RI "#define \fBmaxPoints\fP   10"
+.br
+.ti -1c
+.RI "#define \fBTrans\fP   80"
+.br
+.ti -1c
+.RI "#define \fBnoTrans\fP   100"
+.br
+.ti -1c
+.RI "#define \fBAUTOBUSCA_ALTURA\fP   15"
+.br
+.ti -1c
+.RI "#define \fBAUTOBUSCA_LARGURA\fP   5"
+.br
+.ti -1c
+.RI "#define \fBPRECISAO_BUSCA\fP   1*\fBAUTOBUSCA_ALTURA\fP*\fBAUTOBUSCA_LARGURA\fP"
+.br
+.ti -1c
+.RI "#define \fBMINIMAL_MATCH\fP   0\&.4"
+.br
+.ti -1c
+.RI "#define \fBAUTOBUSCA_PULO\fP   1"
+.br
+.ti -1c
+.RI "#define \fBAPPROXIMATION\fP   3"
+.br
+.ti -1c
+.RI "#define \fBMIN_AREA\fP   200"
+.br
+.ti -1c
+.RI "#define \fBMAX_AREA\fP   400"
+.br
+.ti -1c
+.RI "#define \fBUNIDADE\fP   'mg'"
+.br
+.ti -1c
+.RI "#define \fBBASE\fP   134"
+.br
+.ti -1c
+.RI "#define \fBHEIGHT\fP   34"
+.br
+.ti -1c
+.RI "#define \fBOFFSETX\fP   405"
+.br
+.ti -1c
+.RI "#define \fBOFFSETY\fP   356"
+.br
+.ti -1c
+.RI "#define \fBOFFSETY_2RECT\fP   50"
+.br
+.ti -1c
+.RI "#define \fBERR_NO_CAMERA\fP   -32"
+.br
+.ti -1c
+.RI "#define \fBERR_LOAD_CAMERA\fP   -33"
+.br
+.ti -1c
+.RI "#define \fBERR_INITIAL_READ_FRAME\fP   -34"
+.br
+.ti -1c
+.RI "#define \fBERR_READ_FRAME\fP   -35"
+.br
+.ti -1c
+.RI "#define \fBERR_EMPTY_IMAGES\fP   -36"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBsearchCam\fP (VideoCapture *camera)"
+.br
+.ti -1c
+.RI "void \fBcreateDrawWindow\fP (string name, string \fBtype\fP)"
+.br
+.ti -1c
+.RI "Mat \fBdrawModel\fP (string \fBtype\fP, Mat image)"
+.br
+.ti -1c
+.RI "void \fBfilter\fP (Mat &src, Mat &dst)"
+.br
+.ti -1c
+.RI "void \fBproc\fP (Mat &src, Mat &dst)"
+.br
+.ti -1c
+.RI "Mat \fBshow\fP (Mat src1, Mat src2, int percentage)"
+.br
+.ti -1c
+.RI "bool \fBallOnes\fP (Mat VcMat[], int VcSize, int numElements)"
+.br
+.ti -1c
+.RI "void \fBajuste\fP (int VcSize, Range MatRow[], Range MatCol[], int *properties[], Mat &src, Mat &dst)"
+.br
+.ti -1c
+.RI "vector< vector< Point > > \fBprocessamento\fP (Mat HSV, Mat bin)"
+.br
+.ti -1c
+.RI "double \fBcalculation\fP (vector< vector< Point >> region, Mat image)"
+.br
+.ti -1c
+.RI "int \fB_tmain\fP (int argc, char **argv)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fBradius\fP"
+.br
+.ti -1c
+.RI "int \fBbase\fP"
+.br
+.ti -1c
+.RI "int \fBheight\fP"
+.br
+.ti -1c
+.RI "int \fBoffsetX\fP"
+.br
+.ti -1c
+.RI "int \fBoffsetY\fP"
+.br
+.ti -1c
+.RI "int \fBtext_offsetX\fP"
+.br
+.ti -1c
+.RI "int \fBtext_offsetY\fP"
+.br
+.ti -1c
+.RI "int \fBfontFace\fP"
+.br
+.ti -1c
+.RI "int \fBscale\fP"
+.br
+.ti -1c
+.RI "int \fBleft_text\fP"
+.br
+.ti -1c
+.RI "int \fBsizeCols\fP"
+.br
+.ti -1c
+.RI "int \fBsizeRows\fP"
+.br
+.ti -1c
+.RI "string \fBtype\fP"
+.br
+.ti -1c
+.RI "int \fB_szWidth\fP"
+.br
+.ti -1c
+.RI "int \fB_szHeight\fP"
+.br
+.ti -1c
+.RI "int \fBdelta\fP"
+.br
+.ti -1c
+.RI "int \fB_minHue\fP"
+.br
+.ti -1c
+.RI "int \fB_minSat\fP"
+.br
+.ti -1c
+.RI "int \fB_minVal\fP"
+.br
+.ti -1c
+.RI "int \fB_maxHue\fP"
+.br
+.ti -1c
+.RI "int \fB_maxSat\fP"
+.br
+.ti -1c
+.RI "int \fB_maxVal\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define APPROXIMATION   3"
+
+.PP
+Definition at line 80 of file main\&.cpp\&.
+.PP
+Referenced by processamento()\&.
+.SS "#define AUTOBUSCA_ALTURA   15"
+
+.PP
+Definition at line 75 of file main\&.cpp\&.
+.PP
+Referenced by processamento()\&.
+.SS "#define AUTOBUSCA_LARGURA   5"
+
+.PP
+Definition at line 76 of file main\&.cpp\&.
+.PP
+Referenced by processamento()\&.
+.SS "#define AUTOBUSCA_PULO   1"
+
+.PP
+Definition at line 79 of file main\&.cpp\&.
+.PP
+Referenced by processamento()\&.
+.SS "#define Ax   11\&.935"
+
+.PP
+Definition at line 39 of file main\&.cpp\&.
+.PP
+Referenced by _tmain()\&.
+.SS "#define BASE   134"
+
+.PP
+Definition at line 84 of file main\&.cpp\&.
+.PP
+Referenced by _tmain()\&.
+.SS "#define Bx   -6\&.7718"
+
+.PP
+Definition at line 40 of file main\&.cpp\&.
+.PP
+Referenced by _tmain()\&.
+.SS "#define CAMERA_ID   1"
+
+.PP
+Definition at line 42 of file main\&.cpp\&.
+.PP
+Referenced by _tmain()\&.
+.SS "#define CAMERA_SEARCH   false"
+
+.PP
+Definition at line 41 of file main\&.cpp\&.
+.PP
+Referenced by _tmain()\&.
+.SS "#define deltaGaussianBlur   700"
+
+.PP
+Definition at line 65 of file main\&.cpp\&.
+.PP
+Referenced by _tmain()\&.
+.SS "#define DRAWING_CONFIG_WINDOW   'Referencia - Config'"
+
+.PP
+Definition at line 43 of file main\&.cpp\&.
+.PP
+Referenced by _tmain()\&.
+.SS "#define ERR_EMPTY_IMAGES   -36"
+
+.PP
+Definition at line 97 of file main\&.cpp\&.
+.PP
+Referenced by _tmain()\&.
+.SS "#define ERR_INITIAL_READ_FRAME   -34"
+
+.PP
+Definition at line 95 of file main\&.cpp\&.
+.PP
+Referenced by _tmain()\&.
+.SS "#define ERR_LOAD_CAMERA   -33"
+
+.PP
+Definition at line 94 of file main\&.cpp\&.
+.PP
+Referenced by _tmain()\&.
+.SS "#define ERR_NO_CAMERA   -32"
+
+.PP
+Definition at line 93 of file main\&.cpp\&.
+.PP
+Referenced by searchCam()\&.
+.SS "#define ERR_READ_FRAME   -35"
+
+.PP
+Definition at line 96 of file main\&.cpp\&.
+.PP
+Referenced by _tmain()\&.
+.SS "#define FULL_WHEIGHT   1\&.0"
+
+.PP
+Definition at line 58 of file main\&.cpp\&.
+.PP
+Referenced by drawModel()\&.
+.SS "#define HALF_WHEIGHT   0\&.5"
+
+.PP
+Definition at line 60 of file main\&.cpp\&.
+.SS "#define HEIGHT   34"
+
+.PP
+Definition at line 85 of file main\&.cpp\&.
+.PP
+Referenced by _tmain()\&.
+.SS "#define MAX_AREA   400"
+
+.PP
+Definition at line 82 of file main\&.cpp\&.
+.PP
+Referenced by processamento()\&.
+.SS "#define MAX_DRAWING_CIRCLE_RADIUS   400"
+
+.PP
+Definition at line 48 of file main\&.cpp\&.
+.PP
+Referenced by createDrawWindow()\&.
+.SS "#define MAX_DRAWING_RECT_BASE   400"
+
+.PP
+Definition at line 49 of file main\&.cpp\&.
+.PP
+Referenced by createDrawWindow()\&.
+.SS "#define MAX_DRAWING_RECT_HEIGHT   400"
+
+.PP
+Definition at line 50 of file main\&.cpp\&.
+.PP
+Referenced by createDrawWindow()\&.
+.SS "#define MAX_FONT_SCALE   30"
+
+.PP
+Definition at line 52 of file main\&.cpp\&.
+.PP
+Referenced by createDrawWindow()\&.
+.SS "#define MAX_FONT_TYPE   7"
+
+.PP
+Definition at line 51 of file main\&.cpp\&.
+.PP
+Referenced by createDrawWindow()\&.
+.SS "#define MAX_LEFT_TEXT_OFFSET   50"
+
+.PP
+Definition at line 54 of file main\&.cpp\&.
+.SS "#define MAX_TEXT_OFFSET   200"
+
+.PP
+Definition at line 53 of file main\&.cpp\&.
+.PP
+Referenced by createDrawWindow()\&.
+.SS "#define maxHue   179"
+
+.PP
+Definition at line 69 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), and processamento()\&.
+.SS "#define maxPoints   10"
+
+.PP
+Definition at line 72 of file main\&.cpp\&.
+.PP
+Referenced by ajuste(), and processamento()\&.
+.SS "#define maxSat   255"
+
+.PP
+Definition at line 70 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), and processamento()\&.
+.SS "#define maxVal   255"
+
+.PP
+Definition at line 71 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), and processamento()\&.
+.SS "#define MIN_AREA   200"
+
+.PP
+Definition at line 81 of file main\&.cpp\&.
+.PP
+Referenced by processamento()\&.
+.SS "#define minHue   90"
+
+.PP
+Definition at line 66 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), and processamento()\&.
+.SS "#define MINIMAL_MATCH   0\&.4"
+
+.PP
+Definition at line 78 of file main\&.cpp\&.
+.PP
+Referenced by processamento()\&.
+.SS "#define minSat   0"
+
+.PP
+Definition at line 67 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), and processamento()\&.
+.SS "#define minVal   0"
+
+.PP
+Definition at line 68 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), and processamento()\&.
+.SS "#define NO_WHEIGHT   0"
+
+.PP
+Definition at line 62 of file main\&.cpp\&.
+.PP
+Referenced by drawModel()\&.
+.SS "#define noTrans   100"
+
+.PP
+Definition at line 74 of file main\&.cpp\&.
+.SS "#define OFFSETX   405"
+
+.PP
+Definition at line 86 of file main\&.cpp\&.
+.PP
+Referenced by _tmain()\&.
+.SS "#define OFFSETY   356"
+
+.PP
+Definition at line 87 of file main\&.cpp\&.
+.PP
+Referenced by _tmain()\&.
+.SS "#define OFFSETY_2RECT   50"
+
+.PP
+Definition at line 88 of file main\&.cpp\&.
+.PP
+Referenced by drawModel()\&.
+.SS "#define ONE_FOURTH_WHEIGHT   0\&.25"
+
+.PP
+Definition at line 61 of file main\&.cpp\&.
+.SS "#define OUTLINE_COLOR   Scalar(0,255,0)"
+
+.PP
+Definition at line 55 of file main\&.cpp\&.
+.PP
+Referenced by drawModel()\&.
+.SS "#define OUTLINE_THICKNESS   4"
+
+.PP
+Definition at line 56 of file main\&.cpp\&.
+.PP
+Referenced by drawModel()\&.
+.SS "#define PRECISAO_BUSCA   1*\fBAUTOBUSCA_ALTURA\fP*\fBAUTOBUSCA_LARGURA\fP"
+
+.PP
+Definition at line 77 of file main\&.cpp\&.
+.PP
+Referenced by ajuste()\&.
+.SS "#define PROGRAM_WINDOW   'Programa'"
+
+.PP
+Definition at line 44 of file main\&.cpp\&.
+.PP
+Referenced by _tmain()\&.
+.SS "#define szHeight   29"
+
+.PP
+Definition at line 64 of file main\&.cpp\&.
+.PP
+Referenced by _tmain()\&.
+.SS "#define szWidth   29"
+
+.PP
+Definition at line 63 of file main\&.cpp\&.
+.PP
+Referenced by _tmain()\&.
+.SS "#define TEXT_THICKNESS   3"
+
+.PP
+Definition at line 57 of file main\&.cpp\&.
+.PP
+Referenced by drawModel()\&.
+.SS "#define THREE_FOURTHS_WHEIGHT   0\&.75"
+
+.PP
+Definition at line 59 of file main\&.cpp\&.
+.PP
+Referenced by drawModel()\&.
+.SS "#define Trans   80"
+
+.PP
+Definition at line 73 of file main\&.cpp\&.
+.SS "#define TYPE_CIRCLE   'CIRCLE'"
+
+.PP
+Definition at line 45 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), createDrawWindow(), and drawModel()\&.
+.SS "#define TYPE_RECT   'RECT'"
+
+.PP
+Definition at line 46 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), createDrawWindow(), and drawModel()\&.
+.SS "#define TYPE_RECT2   'RECT2'"
+
+.PP
+Definition at line 47 of file main\&.cpp\&.
+.PP
+Referenced by drawModel()\&.
+.SS "#define UNIDADE   'mg'"
+
+.PP
+Definition at line 83 of file main\&.cpp\&.
+.PP
+Referenced by _tmain()\&.
+.SH "Function Documentation"
+.PP 
+.SS "int _tmain (intargc, char **argv)"
+
+.PP
+Definition at line 161 of file main\&.cpp\&.
+.PP
+References _maxHue, _maxSat, _maxVal, _minHue, _minSat, _minVal, _szHeight, _szWidth, Ax, BASE, base, Bx, calculation(), CAMERA_ID, CAMERA_SEARCH, createDrawWindow(), delta, deltaGaussianBlur, DRAWING_CONFIG_WINDOW, drawModel(), ERR_EMPTY_IMAGES, ERR_INITIAL_READ_FRAME, ERR_LOAD_CAMERA, ERR_READ_FRAME, filter(), HEIGHT, height, maxHue, maxSat, maxVal, minHue, minSat, minVal, OFFSETX, offsetX, OFFSETY, offsetY, processamento(), PROGRAM_WINDOW, radius, searchCam(), sizeCols, sizeRows, szHeight, szWidth, type, TYPE_CIRCLE, TYPE_RECT, and UNIDADE\&.
+.PP
+.nf
+161                                    {
+162     base = BASE;
+163     height = HEIGHT;
+164     offsetX = OFFSETX;
+165     offsetY = OFFSETY;
+166     VideoCapture camera;
+167     Mat frame;
+168     int camID;
+169     char command;
+170     type = TYPE_RECT;
+171 
+172     //Caso a escolha de cameras esteja habilitada\&.
+173     if (CAMERA_SEARCH)
+174         camID = searchCam(&camera);
+175     else
+176         camID = CAMERA_ID;
+177 
+178     //Abre a camera selecionada\&.
+179     camera\&.open(camID);
+180 
+181     //Caso a camera nao consiga ser aberta corretamente retorna um erro\&.
+182     if( !camera\&.isOpened() ) {
+183         cout << "Error " << ERR_LOAD_CAMERA;
+184         destroyAllWindows();
+185         return (ERR_LOAD_CAMERA);
+186     }
+187 
+188     //Ler frame da camera
+189     if ( !camera\&.read(frame) ) {
+190         cout << "Error " << ERR_INITIAL_READ_FRAME;
+191         destroyAllWindows();
+192         return (ERR_INITIAL_READ_FRAME);
+193     }
+194 
+195     //Criando janela para configuracao do modelo\&.
+196     sizeCols = frame\&.cols;
+197     sizeRows = frame\&.rows;
+198     createDrawWindow(DRAWING_CONFIG_WINDOW,type);
+199         
+200     //Loop para mostrar a imagem
+201     while ( (command = waitKey(30)) != 27) {
+202 
+203         //Ler proximo frame\&.
+204         if ( !camera\&.read(frame) ) {
+205             cout << "Error " << ERR_READ_FRAME;
+206             destroyAllWindows();
+207             return (ERR_READ_FRAME);
+208         }
+209 
+210         //Junta p frame com o modelo e mostra o resultado\&.
+211         frame = drawModel(type , frame);
+212         //frame = drawModel(TYPE_RECT2 , frame);
+213         imshow(PROGRAM_WINDOW,frame);   
+214 
+215         //Comando para processar a imagem
+216         if ( command == ' ') {
+217             Mat control,control1;
+218             Mat test,test1;
+219 
+220             //Selecionando imagens com o controle e teste
+221             if(type == TYPE_CIRCLE) {
+222                 control = frame\&.colRange(offsetX-radius,offsetX);
+223                 control = control\&.rowRange(offsetY-radius,offsetY+radius);
+224                 test = frame\&.colRange(offsetX,offsetX+radius);
+225                 test = test\&.rowRange(offsetY-radius,offsetY+radius);
+226             }
+227 
+228             else if(type == TYPE_RECT) {
+229                 control = frame\&.colRange(offsetX-base/2,offsetX);
+230                 control = control\&.rowRange(offsetY-height/2,offsetY+height/2);
+231                 test = frame\&.colRange(offsetX,offsetX+base/2);
+232                 test = test\&.rowRange(offsetY-height/2,offsetY+height/2);
+233 
+234                 /*control1 = frame\&.colRange(offsetX-base/2,offsetX);
+235                 control1 = control1\&.rowRange(offsetY-height/2 - OFFSETY_2RECT,offsetY+height/2 - OFFSETY_2RECT);
+236                 test1 = frame\&.colRange(offsetX,offsetX+base/2);
+237                 test1 = test1\&.rowRange(offsetY-height/2 - OFFSETY_2RECT,offsetY+height/2 - OFFSETY_2RECT);*/
+238             }
+239 
+240             if ( control\&.empty() || test\&.empty() ) {
+241                 cout << "Error " << ERR_EMPTY_IMAGES ;
+242                 destroyAllWindows();
+243                 return(ERR_EMPTY_IMAGES);
+244             }
+245 
+246             /********************************************************/
+247             //Comeco do processamento
+248             _szWidth = szWidth; _szHeight = szHeight; delta = deltaGaussianBlur;
+249             _minHue = minHue; _minSat = minSat; _minVal = minVal; _maxHue = maxHue; _maxSat = maxSat; _maxVal = maxVal;
+250             Mat test_HSV = test\&.clone();
+251             Mat control_HSV = control\&.clone();
+252             //Mat test1_HSV = test1\&.clone();
+253             //Mat control1_HSV = control1\&.clone();
+254             Mat test_binary = Mat::zeros(test\&.rows,test\&.cols,CV_8UC1),control_binary = Mat::zeros(control\&.rows,control\&.cols,CV_8UC1);
+255             //Mat test1_binary = Mat::zeros(test1\&.rows,test1\&.cols,CV_8UC1),control1_binary = Mat::zeros(control1\&.rows,control1\&.cols,CV_8UC1);
+256             vector<vector<Point>> region_control, region_test, region_control1, region_test1;
+257             cvtColor(control_HSV,control_HSV,CV_BGR2HSV);
+258             cvtColor(test_HSV,test_HSV,CV_BGR2HSV);
+259             //cvtColor(control1_HSV,control1_HSV,CV_BGR2HSV);
+260             //cvtColor(test1_HSV,test1_HSV,CV_BGR2HSV);
+261 
+262             filter(control_HSV,control_HSV);
+263             filter(test_HSV,test_HSV);
+264             //filter(control1_HSV,control1_HSV);
+265             //filter(test1_HSV,test1_HSV);
+266 
+267 
+268             region_control = processamento(control_HSV,control_binary);
+269             region_test = processamento(test_HSV,test_binary);
+270             //region_control1 = processamento(control1_HSV,control1_binary);
+271             //region_test1 = processamento(test1_HSV,test1_binary);
+272                         
+273             if( !region_control\&.empty() && !region_test\&.empty()){ //&& !region_control1\&.empty() && !region_test1\&.empty()) {
+274                 double concentration = calculation(region_test,test_HSV)/calculation(region_control,control_HSV);
+275                 //double concentration1 = calculation(region_control1,control1_HSV)/calculation(region_test1,test1_HSV);
+276                 concentration = Ax*concentration + Bx;
+277                 //concentration1 = Ax*concentration1 + Bx;
+278                 cout << "Concentracao da amostra:\n" << concentration << " " << UNIDADE << endl ;//<< concentration1 << " " << UNIDADE << endl;
+279                 test_binary = control_binary = Mat::zeros(frame\&.rows,frame\&.cols,CV_8UC1);
+280                 //test1_binary = control1_binary = Mat::zeros(frame\&.rows,frame\&.cols,CV_8UC1);
+281                 drawContours(test_binary,region_test,0,Scalar(255),-1,8,noArray(),2,Point(offsetX,offsetY-height/2));
+282                 drawContours(control_binary,region_control,0,Scalar(255),-1,8,noArray(),2,Point(offsetX-base/2,offsetY-height/2));
+283                 //drawContours(test1_binary,region_test1,0,Scalar(255),-1,8,noArray(),2,Point(offsetX,offsetY-height/2 - OFFSETY_2RECT));
+284                 //drawContours(control1_binary,region_control1,0,Scalar(255),-1,8,noArray(),2,Point(offsetX-base/2,offsetY-height/2 - OFFSETY_2RECT));
+285                 add(control_binary,test_binary,control_binary);
+286                 //add(control_binary,test1_binary,control_binary);
+287                 //add(control_binary,control1_binary,control_binary);
+288                 cvtColor(control_binary,control_binary,CV_GRAY2BGR);
+289                 addWeighted(frame,0\&.8,control_binary,0\&.2,0,frame);
+290                 imshow(PROGRAM_WINDOW,frame);
+291             }
+292             else
+293                 cout << "Concentracao da amostra:\n 0 " << UNIDADE << endl;
+294 
+295             waitKey();
+296 
+297             /********************************************************/
+298         }
+299     }
+300     destroyAllWindows();
+301     return 0;
+302 }
+.fi
+.SS "void ajuste (intVcSize, RangeMatRow[], RangeMatCol[], int *properties[], Mat &src, Mat &dst)"
+
+.PP
+Definition at line 462 of file main\&.cpp\&.
+.PP
+References allOnes(), maxPoints, PRECISAO_BUSCA, and proc()\&.
+.PP
+Referenced by processamento()\&.
+.PP
+.nf
+462                                                                                                {
+463     Mat VcMat[maxPoints];
+464 
+465     if (VcSize == 0) {
+466         cout << "VcSize = 0\n";
+467         return;
+468     }
+469     
+470     int u = 0;
+471     //Os minimos primeiro
+472     while(u < 3) {
+473         //Incrementa a primeira propriedade
+474         *properties[u] += 1;
+475         proc(src,dst);
+476 
+477         //Seleciona todas as imagens
+478         for (int y = 0; y < VcSize; y++) {
+479             VcMat[y] = dst(MatRow[y],MatCol[y]);
+480         }
+481 
+482         //Verifica se as imagens estao de acordo
+483         if(!allOnes(VcMat,VcSize,PRECISAO_BUSCA)) {
+484             *properties[u] -= 1;
+485             proc(src,dst);
+486             for (int y = 0; y < VcSize; y++) {
+487                 VcMat[y] = dst(MatRow[y],MatCol[y]);
+488             }
+489             u += 1;
+490         }
+491     }
+492     //mesmos passos da anterior, mas para os valores maximos
+493     while (u < 6) {
+494         *properties[u] -= 1;
+495         proc(src,dst);
+496         for (int y = 0; y < VcSize; y++) {
+497             VcMat[y] = dst(MatRow[y],MatCol[y]);
+498         }
+499         if(!allOnes(VcMat,VcSize,PRECISAO_BUSCA)) {
+500             *properties[u] += 1;
+501             proc(src,dst);
+502             for (int y = 0; y < VcSize; y++) {
+503                 VcMat[y] = dst(MatRow[y],MatCol[y]);
+504             }
+505             u += 1;
+506         }
+507     }
+508 }
+.fi
+.SS "bool allOnes (MatVcMat[], intVcSize, intnumElements)"
+
+.PP
+Definition at line 443 of file main\&.cpp\&.
+.PP
+Referenced by ajuste()\&.
+.PP
+.nf
+443                                                        {
+444     bool res = true;
+445     for(int z = 0; z < VcSize; z++) {
+446         if(countNonZero(VcMat[z]) < numElements) {
+447             res = false;
+448             break;
+449         }
+450     }
+451     return res;
+452 }
+.fi
+.SS "double calculation (vector< vector< Point >>region, Matimage)"
+
+.PP
+Definition at line 562 of file main\&.cpp\&.
+.PP
+Referenced by _tmain()\&.
+.PP
+.nf
+562                                                             {
+563     if( !region\&.empty() ) {
+564         Mat bin = Mat::zeros(image\&.rows,image\&.cols,CV_8UC1);
+565         drawContours(bin,region,0,Scalar(255),-1);
+566         Scalar mean,stdd;
+567         meanStdDev(image,mean,stdd,bin);
+568         cout << mean << endl << stdd << endl;
+569         return (mean[1] + 2*stdd[1]);
+570     }
+571 
+572     else
+573         return 0;
+574 }
+.fi
+.SS "void createDrawWindow (stringname, stringtype)"
+
+.PP
+Definition at line 347 of file main\&.cpp\&.
+.PP
+References base, fontFace, height, left_text, MAX_DRAWING_CIRCLE_RADIUS, MAX_DRAWING_RECT_BASE, MAX_DRAWING_RECT_HEIGHT, MAX_FONT_SCALE, MAX_FONT_TYPE, MAX_TEXT_OFFSET, offsetX, offsetY, radius, scale, sizeCols, sizeRows, text_offsetX, text_offsetY, TYPE_CIRCLE, and TYPE_RECT\&.
+.PP
+Referenced by _tmain()\&.
+.PP
+.nf
+347                                                   {
+348     //Janela para as configuracoes do modelo com barras para altera-las
+349     namedWindow(name,CV_WINDOW_FREERATIO);
+350     
+351     //Se o modelo e um retangulo
+352     if (type == TYPE_RECT) {
+353         createTrackbar("Base",name,&base,MAX_DRAWING_RECT_BASE);        //Base do retangulo
+354         createTrackbar("Height",name,&height,MAX_DRAWING_RECT_HEIGHT);  //Altura do retangulo
+355     }
+356     //Se o modelo e um circulo
+357     else if (type == TYPE_CIRCLE) {
+358         createTrackbar("Radius",name,&radius,MAX_DRAWING_CIRCLE_RADIUS);//Raio do ciruclo
+359     }
+360 
+361     createTrackbar("offsetX",name,&offsetX,sizeCols);                   //Offset X do centro
+362     createTrackbar("offsety",name,&offsetY,sizeRows);                   //Offset Y do centro
+363     createTrackbar("Text X",name,&text_offsetX,MAX_TEXT_OFFSET);        //Offset X do texto
+364     createTrackbar("Text Y",name,&text_offsetY,MAX_TEXT_OFFSET);        //Offset Y do texto
+365     createTrackbar("left_text",name,&left_text,MAX_TEXT_OFFSET);        //Offset X adicional do texto esquerdo
+366     createTrackbar("fontFace",name,&fontFace,MAX_FONT_TYPE);            //Fonte do texto
+367     createTrackbar("scale",name,&scale,MAX_FONT_SCALE);                 //Tamanho do texto
+368 
+369     return;
+370 }
+.fi
+.SS "Mat drawModel (stringtype, Matimage)"
+
+.PP
+Definition at line 372 of file main\&.cpp\&.
+.PP
+References base, fontFace, FULL_WHEIGHT, height, left_text, NO_WHEIGHT, offsetX, offsetY, OFFSETY_2RECT, OUTLINE_COLOR, OUTLINE_THICKNESS, radius, scale, text_offsetX, text_offsetY, TEXT_THICKNESS, THREE_FOURTHS_WHEIGHT, TYPE_CIRCLE, TYPE_RECT, and TYPE_RECT2\&.
+.PP
+Referenced by _tmain()\&.
+.PP
+.nf
+372                                       {
+373     //Initialize drawing to all black\&.
+374     Mat drawing = Mat::zeros(image\&.rows,image\&.cols,CV_8UC3);
+375     
+376     
+377     if (type == TYPE_CIRCLE) {
+378         //Draws a circle in drawing\&.
+379         circle(drawing,Point(offsetX,offsetY),radius,OUTLINE_COLOR,OUTLINE_THICKNESS);
+380 
+381         //Draws the vertical middle line of the circle\&.
+382         line(drawing,Point(offsetX,(offsetY-radius)),Point(offsetX,(offsetY+radius)),OUTLINE_COLOR,OUTLINE_THICKNESS);
+383 
+384         //Write text\&.
+385         putText(drawing,"C",Point((offsetX-radius-text_offsetX-left_text),(offsetY+text_offsetY)),fontFace,scale/10\&.0,OUTLINE_COLOR,TEXT_THICKNESS);
+386         putText(drawing,"T",Point((offsetX+radius+text_offsetX),(offsetY+text_offsetY)),fontFace,scale/10\&.0,OUTLINE_COLOR,TEXT_THICKNESS);
+387     }
+388     
+389     else if (type == TYPE_RECT) {
+390         //Draws a rectangle in drawing\&.
+391         rectangle(drawing,Point(offsetX-base/2,offsetY-height/2),Point(offsetX+base/2,offsetY+height/2),Scalar(0,255,0),OUTLINE_THICKNESS);
+392         
+393         //Draws the vertical middle line of the rectangle\&.
+394         line(drawing,Point(offsetX,(offsetY-height/2)),Point(offsetX,(offsetY+height/2)),OUTLINE_COLOR,OUTLINE_THICKNESS);
+395         
+396         //Write text\&.
+397         putText(drawing,"C",Point((offsetX-base/2-text_offsetX-left_text),(offsetY+text_offsetY)),fontFace,scale/10\&.0,OUTLINE_COLOR,TEXT_THICKNESS);
+398         putText(drawing,"T",Point((offsetX+base/2+text_offsetX),(offsetY+text_offsetY)),fontFace,scale/10\&.0,OUTLINE_COLOR,TEXT_THICKNESS);
+399 
+400     }
+401 
+402     else if (type == TYPE_RECT2) {
+403         //Draws a rectangle in drawing\&.
+404         rectangle(drawing,Point(offsetX-base/2,offsetY-height/2 - OFFSETY_2RECT),Point(offsetX+base/2,offsetY+height/2 - OFFSETY_2RECT),Scalar(0,255,0),OUTLINE_THICKNESS);
+405         
+406         //Draws the vertical middle line of the rectangle\&.
+407         line(drawing,Point(offsetX,(offsetY-height/2 - OFFSETY_2RECT)),Point(offsetX,(offsetY+height/2-OFFSETY_2RECT)),OUTLINE_COLOR,OUTLINE_THICKNESS);
+408         
+409         //Write text\&.
+410         putText(drawing,"C",Point((offsetX-base/2-text_offsetX-left_text),(offsetY+text_offsetY-OFFSETY_2RECT)),fontFace,scale/10\&.0,OUTLINE_COLOR,TEXT_THICKNESS);
+411         putText(drawing,"T",Point((offsetX+base/2+text_offsetX),(offsetY+text_offsetY-OFFSETY_2RECT)),fontFace,scale/10\&.0,OUTLINE_COLOR,TEXT_THICKNESS);
+412 
+413     }
+414     
+415     //Add the actual frame with the drawing, forming a new image\&.
+416     addWeighted(image,FULL_WHEIGHT,drawing,THREE_FOURTHS_WHEIGHT,NO_WHEIGHT,image);
+417 
+418 
+419     return image;
+420 }
+.fi
+.SS "void filter (Mat &src, Mat &dst)"
+
+.PP
+Definition at line 422 of file main\&.cpp\&.
+.PP
+References _szHeight, _szWidth, and delta\&.
+.PP
+Referenced by _tmain()\&.
+.PP
+.nf
+422                                 {
+423     Size siz(_szWidth,_szHeight);
+424     GaussianBlur(src,dst,siz,delta/100\&.0);
+425     return;
+426 }
+.fi
+.SS "void proc (Mat &src, Mat &dst)"
+
+.PP
+Definition at line 428 of file main\&.cpp\&.
+.PP
+References _maxHue, _maxSat, _maxVal, _minHue, _minSat, and _minVal\&.
+.PP
+Referenced by ajuste(), and processamento()\&.
+.PP
+.nf
+428                               {
+429     inRange(src,Scalar(_minHue,_minSat,_minVal),Scalar(_maxHue,_maxSat,_maxVal),dst);
+430     return;
+431 }
+.fi
+.SS "vector< vector< Point > > processamento (MatHSV, Matbin)"
+
+.PP
+Definition at line 510 of file main\&.cpp\&.
+.PP
+References _maxHue, _maxSat, _maxVal, _minHue, _minSat, _minVal, ajuste(), APPROXIMATION, AUTOBUSCA_ALTURA, AUTOBUSCA_LARGURA, AUTOBUSCA_PULO, MAX_AREA, maxHue, maxPoints, maxSat, maxVal, MIN_AREA, minHue, MINIMAL_MATCH, minSat, minVal, and proc()\&.
+.PP
+Referenced by _tmain()\&.
+.PP
+.nf
+510                                                       {
+511     int *properties[6];
+512     Range MatRow[maxPoints];
+513     Range MatCol[maxPoints];
+514     double match = MINIMAL_MATCH,temp;
+515     vector<vector<Point>> best;
+516     vector<vector<Point>> contours;
+517     vector<Point> rect;
+518     rect\&.push_back(Point(1,1));
+519     rect\&.push_back(Point(1+AUTOBUSCA_LARGURA,1));
+520     rect\&.push_back(Point(1+AUTOBUSCA_LARGURA,1+AUTOBUSCA_ALTURA));
+521     rect\&.push_back(Point(1,1+AUTOBUSCA_ALTURA));
+522     rect\&.push_back(Point(1,1));
+523     properties[0] = &_minHue; properties[1] = &_minSat; properties[2] = &_minVal; properties[3] = &_maxHue; properties[4] = &_maxSat; properties[5] = &_maxVal;
+524     
+525     for( int ROWS = 0 ; ROWS < HSV\&.rows - AUTOBUSCA_ALTURA; ROWS+=AUTOBUSCA_PULO) {
+526         for( int COLS = 0 ; COLS < HSV\&.cols - AUTOBUSCA_LARGURA; COLS+=AUTOBUSCA_PULO) {
+527                 _minHue = minHue; _minSat = minSat; _minVal = minVal; _maxHue = maxHue; _maxSat = maxSat; _maxVal = maxVal;
+528                 proc(HSV,bin);
+529                 MatRow[0] = Range(ROWS,ROWS+AUTOBUSCA_ALTURA);
+530                 MatCol[0] = Range(COLS,COLS+AUTOBUSCA_LARGURA);
+531                 
+532                 ajuste(1,MatRow,MatCol,properties,HSV,bin);
+533                 cout << COLS << " x " << ROWS << endl;
+534         
+535                 findContours(bin, contours, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_SIMPLE);
+536                 cout << "Found " << contours\&.size() << " contours\&." << endl;
+537 
+538                 if(contours\&.size() == 1 && pointPolygonTest(contours[0],Point2f(COLS,ROWS),false) >= 0) {
+539                     approxPolyDP(contours[0],contours[0],APPROXIMATION,true);
+540                     double area = contourArea(contours[0]);
+541                     temp = matchShapes(rect,contours[0],CV_CONTOURS_MATCH_I2,0);
+542                     cout << temp << endl;
+543                     /*mt = Mat::zeros(mt\&.rows,mt\&.cols,CV_8UC1);
+544                     drawContours(mt,contours,0,Scalar(255),-1);
+545                     imshow("Detection",mt);
+546                     cvtColor(mt,mtRGB,CV_GRAY2BGR);
+547                     show(Trans);*/
+548                     if(match > temp && area > MIN_AREA && temp != 0 && area < MAX_AREA) {
+549                         match = temp;
+550                         best\&.clear();
+551                         best\&.push_back(contours[0]);
+552                         //if( !best\&.empty() ) cout << "printed" << endl;
+553                     }
+554                     //waitKey();
+555                 }
+556             }
+557         }
+558 
+559     return best;
+560 }
+.fi
+.SS "int searchCam (VideoCapture *camera)"
+
+.PP
+Definition at line 305 of file main\&.cpp\&.
+.PP
+References ERR_NO_CAMERA\&.
+.PP
+Referenced by _tmain()\&.
+.PP
+.nf
+305                                      {
+306     //Pesquisa todas as cameras possiveis
+307     int x,y;
+308     for (x=0 ; x<10; x++) {
+309         //Abre a camera\&.
+310         camera->open(x);
+311 
+312         //Se falhar para abrir a camera 'y' sera nosso maximo de cameras\&.
+313         if(!camera->isOpened ()) {
+314             y = x;
+315             x += 10;
+316         }
+317         //Se nao falhar continua procurando\&.
+318         else 
+319             camera->release();
+320     }
+321 
+322     //Caso nao tenha cameras que possam ser usadas ocorre um erro\&.
+323     if (y == 0) {
+324         cout << "Error " << ERR_NO_CAMERA << endl;
+325         destroyAllWindows();
+326         exit (ERR_NO_CAMERA);
+327     }
+328 
+329     //Mostra as opcoes\&.
+330     cout << "Existem " << y << " cameras disponiveis\&.\n\nID das cameras:\n";
+331     for(x=0;x<y;x++) cout << x << endl;
+332     cout << "\nEscolha uma camera para usar\&.\n> ";
+333 
+334     //Processa a escolha do usuario\&.
+335     escolha_camera:
+336     cin >> x;
+337     if(x < 0 || x >= y) {
+338         cout << "\nID de camera invalido, tente novamente\&.\n> ";
+339         goto escolha_camera;
+340     }
+341 
+342     //Retorna a camera desejada\&.
+343     system("cls");
+344     return x;
+345 }
+.fi
+.SS "Mat show (Matsrc1, Matsrc2, intpercentage)"
+
+.PP
+Definition at line 434 of file main\&.cpp\&.
+.PP
+.nf
+434                                              {
+435     Mat result;
+436     addWeighted(src1,percentage/100\&.0,src2,(100-percentage)/100\&.0,0\&.0,result);
+437     return result;
+438 }
+.fi
+.SH "Variable Documentation"
+.PP 
+.SS "int _maxHue"
+
+.PP
+Definition at line 122 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), proc(), and processamento()\&.
+.SS "int _maxSat"
+
+.PP
+Definition at line 122 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), proc(), and processamento()\&.
+.SS "int _maxVal"
+
+.PP
+Definition at line 122 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), proc(), and processamento()\&.
+.SS "int _minHue"
+
+.PP
+Definition at line 122 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), proc(), and processamento()\&.
+.SS "int _minSat"
+
+.PP
+Definition at line 122 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), proc(), and processamento()\&.
+.SS "int _minVal"
+
+.PP
+Definition at line 122 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), proc(), and processamento()\&.
+.SS "int _szHeight"
+
+.PP
+Definition at line 121 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), and filter()\&.
+.SS "int _szWidth"
+
+.PP
+Definition at line 121 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), and filter()\&.
+.SS "int base"
+
+.PP
+Definition at line 108 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), createDrawWindow(), and drawModel()\&.
+.SS "int delta"
+
+.PP
+Definition at line 121 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), and filter()\&.
+.SS "int fontFace"
+
+.PP
+Definition at line 113 of file main\&.cpp\&.
+.PP
+Referenced by createDrawWindow(), and drawModel()\&.
+.SS "int height"
+
+.PP
+Definition at line 108 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), createDrawWindow(), and drawModel()\&.
+.SS "int left_text"
+
+.PP
+Definition at line 115 of file main\&.cpp\&.
+.PP
+Referenced by createDrawWindow(), and drawModel()\&.
+.SS "int offsetX"
+
+.PP
+Definition at line 109 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), createDrawWindow(), and drawModel()\&.
+.SS "int offsetY"
+
+.PP
+Definition at line 110 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), createDrawWindow(), and drawModel()\&.
+.SS "int radius"
+
+.PP
+Definition at line 107 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), createDrawWindow(), and drawModel()\&.
+.SS "int scale"
+
+.PP
+Definition at line 114 of file main\&.cpp\&.
+.PP
+Referenced by createDrawWindow(), and drawModel()\&.
+.SS "int sizeCols"
+
+.PP
+Definition at line 116 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), and createDrawWindow()\&.
+.SS "int sizeRows"
+
+.PP
+Definition at line 117 of file main\&.cpp\&.
+.PP
+Referenced by _tmain(), and createDrawWindow()\&.
+.SS "int text_offsetX"
+
+.PP
+Definition at line 111 of file main\&.cpp\&.
+.PP
+Referenced by createDrawWindow(), and drawModel()\&.
+.SS "int text_offsetY"
+
+.PP
+Definition at line 112 of file main\&.cpp\&.
+.PP
+Referenced by createDrawWindow(), and drawModel()\&.
+.SS "string type"
+
+.PP
+Definition at line 118 of file main\&.cpp\&.
+.PP
+Referenced by _tmain()\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Programa from the source code\&.

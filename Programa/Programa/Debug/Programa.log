@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\rodrigo\documents\c_c++\processamento de imagem\teste\programa\programa\main.cpp(465): warning C4309: 'inicializando' : truncamento de valor constante
+c:\users\rodrigo\documents\c_c++\processamento de imagem\teste\programa\programa\main.cpp(471): warning C4018: '<' : incompatibilidade de signed/unsigned
+c:\users\rodrigo\documents\c_c++\processamento de imagem\teste\programa\programa\main.cpp(735): warning C4244: 'argumento' : conversão de 'int' para 'float', possível perda de dados
+  Programa.vcxproj -> C:\Users\Rodrigo\Documents\C_C++\Processamento de Imagem\Teste\Programa\Debug\Programa.exe

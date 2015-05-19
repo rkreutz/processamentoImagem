@@ -1,0 +1,7 @@
+﻿  main.cpp
+main.cpp(465): warning C4309: 'inicializando' : truncamento de valor constante
+main.cpp(471): warning C4018: '<' : incompatibilidade de signed/unsigned
+main.cpp(735): warning C4244: 'argumento' : conversão de 'int' para 'float', possível perda de dados
+  Gerando código
+  Finalizada a geração de código
+  Programa.vcxproj -> C:\Users\Rodrigo\Documents\C_C++\Processamento de Imagem\Teste\Programa\Release\Programa.exe

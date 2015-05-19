@@ -1,0 +1,2352 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 9;}
+{\s50\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext51 List Continue 0;}
+{\s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext52 List Continue 1;}
+{\s52\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext53 List Continue 2;}
+{\s53\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext54 List Continue 3;}
+{\s54\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext55 List Continue 4;}
+{\s55\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext56 List Continue 5;}
+{\s56\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext57 List Continue 6;}
+{\s57\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext58 List Continue 7;}
+{\s58\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 8;}
+{\s59\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 9;}
+{\s60\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext61 DescContinue 0;}
+{\s61\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext62 DescContinue 1;}
+{\s62\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext63 DescContinue 2;}
+{\s63\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext64 DescContinue 3;}
+{\s64\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext65 DescContinue 4;}
+{\s65\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext66 DescContinue 5;}
+{\s66\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext67 DescContinue 6;}
+{\s67\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext68 DescContinue 7;}
+{\s68\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 8;}
+{\s69\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 9;}
+{\s70\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext81 LatexTOC 0;}
+{\s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext82 LatexTOC 1;}
+{\s72\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext83 LatexTOC 2;}
+{\s73\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext84 LatexTOC 3;}
+{\s74\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext85 LatexTOC 4;}
+{\s75\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext86 LatexTOC 5;}
+{\s76\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext87 LatexTOC 6;}
+{\s77\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext88 LatexTOC 7;}
+{\s78\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 8;}
+{\s79\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 9;}
+{\s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext81 \sautoupd List Bullet 0;}
+{\s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid \sbasedon0 \snext82 \sautoupd List Bullet 1;}
+{\s82\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls3\adjustright \fs20\cgrid \sbasedon0 \snext83 \sautoupd List Bullet 2;}
+{\s83\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls4\adjustright \fs20\cgrid \sbasedon0 \snext84 \sautoupd List Bullet 3;}
+{\s84\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls5\adjustright \fs20\cgrid \sbasedon0 \snext85 \sautoupd List Bullet 4;}
+{\s85\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls6\adjustright \fs20\cgrid \sbasedon0 \snext86 \sautoupd List Bullet 5;}
+{\s86\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls7\adjustright \fs20\cgrid \sbasedon0 \snext87 \sautoupd List Bullet 6;}
+{\s87\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls8\adjustright \fs20\cgrid \sbasedon0 \snext88 \sautoupd List Bullet 7;}
+{\s88\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls9\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 8;}
+{\s89\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls10\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 9;}
+{\s90\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext91 \sautoupd List Enum 0;}
+{\s91\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext92 \sautoupd List Enum 1;}
+{\s92\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext93 \sautoupd List Enum 2;}
+{\s93\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext94 \sautoupd List Enum 3;}
+{\s94\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext95 \sautoupd List Enum 4;}
+{\s95\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s96\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s97\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext98 \sautoupd List Enum 7;}
+{\s98\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 8;}
+{\s99\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 9;}
+}
+{\comment begin body}
+{\info 
+{\title {\comment Programa  {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+1.0 \par
+}}Programa}
+{\comment Generated byDoxgyen. }
+{\creatim \yr2014\mo3\dy5\hr12\min40\sec24}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt TITLE}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version 1.0\par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt CREATEDATE}}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table of Contents\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Index\par \pard\plain 
+{\tc \v File Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+File List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all files with brief descriptions:}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b main.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b stdafx.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b stdafx.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADM \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b targetver.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADN \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Documentation{\tc \v File Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+main.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v main.cpp}
+{\xe \v main.cpp}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "stdafx.h"}\par
+{\f2 #include <iostream>}\par
+{\f2 #include <cstdlib>}\par
+{\f2 #include "opencv2/core/core.hpp"}\par
+{\f2 #include "opencv2/flann/miniflann.hpp"}\par
+{\f2 #include "opencv2/imgproc/imgproc.hpp"}\par
+{\f2 #include "opencv2/photo/photo.hpp"}\par
+{\f2 #include "opencv2/video/video.hpp"}\par
+{\f2 #include "opencv2/features2d/features2d.hpp"}\par
+{\f2 #include "opencv2/objdetect/objdetect.hpp"}\par
+{\f2 #include "opencv2/calib3d/calib3d.hpp"}\par
+{\f2 #include "opencv2/ml/ml.hpp"}\par
+{\f2 #include "opencv2/highgui/highgui.hpp"}\par
+{\f2 #include "opencv2/contrib/contrib.hpp"}\par
+{\f2 #include "opencv2/core/core_c.h"}\par
+{\f2 #include "opencv2/highgui/highgui_c.h"}\par
+{\f2 #include "opencv2/imgproc/imgproc_c.h"}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Include dependency graph for main.cpp:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8cpp__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b Ax}\~ 11.935\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b Bx}\~ -6.7718\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b CAMERA_SEARCH}\~ false\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b CAMERA_ID}\~ 1\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b DRAWING_CONFIG_WINDOW}\~ "Referencia - Config"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b PROGRAM_WINDOW}\~ "Programa"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b TYPE_CIRCLE}\~ "CIRCLE"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b TYPE_RECT}\~ "RECT"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b TYPE_RECT2}\~ "RECT2"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b MAX_DRAWING_CIRCLE_RADIUS}\~ 400\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b MAX_DRAWING_RECT_BASE}\~ 400\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b MAX_DRAWING_RECT_HEIGHT}\~ 400\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b MAX_FONT_TYPE}\~ 7\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b MAX_FONT_SCALE}\~ 30\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b MAX_TEXT_OFFSET}\~ 200\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b MAX_LEFT_TEXT_OFFSET}\~ 50\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b OUTLINE_COLOR}\~ Scalar(0,255,0)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b OUTLINE_THICKNESS}\~ 4\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b TEXT_THICKNESS}\~ 3\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b FULL_WHEIGHT}\~ 1.0\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b THREE_FOURTHS_WHEIGHT}\~ 0.75\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b HALF_WHEIGHT}\~ 0.5\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b ONE_FOURTH_WHEIGHT}\~ 0.25\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b NO_WHEIGHT}\~ 0\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b szWidth}\~ 29\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b szHeight}\~ 29\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b deltaGaussianBlur}\~ 700\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b minHue}\~ 90\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b minSat}\~ 0\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b minVal}\~ 0\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b maxHue}\~ 179\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b maxSat}\~ 255\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b maxVal}\~ 255\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b maxPoints}\~ 10\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b Trans}\~ 80\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b noTrans}\~ 100\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b AUTOBUSCA_ALTURA}\~ 15\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b AUTOBUSCA_LARGURA}\~ 5\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b PRECISAO_BUSCA}\~ 1*{\b AUTOBUSCA_ALTURA}*{\b AUTOBUSCA_LARGURA}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b MINIMAL_MATCH}\~ 0.4\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b AUTOBUSCA_PULO}\~ 1\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b APPROXIMATION}\~ 3\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b MIN_AREA}\~ 200\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b MAX_AREA}\~ 400\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b UNIDADE}\~ "mg"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b BASE}\~ 134\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b HEIGHT}\~ 34\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b OFFSETX}\~ 405\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b OFFSETY}\~ 356\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b OFFSETY_2RECT}\~ 50\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b ERR_NO_CAMERA}\~ -32\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b ERR_LOAD_CAMERA}\~ -33\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b ERR_INITIAL_READ_FRAME}\~ -34\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b ERR_READ_FRAME}\~ -35\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b ERR_EMPTY_IMAGES}\~ -36\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b searchCam} (VideoCapture *camera)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b createDrawWindow} (string name, string {\b type})\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Mat {\b drawModel} (string {\b type}, Mat image)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b filter} (Mat &src, Mat &dst)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b proc} (Mat &src, Mat &dst)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Mat {\b show} (Mat src1, Mat src2, int percentage)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b allOnes} (Mat VcMat[], int VcSize, int numElements)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b ajuste} (int VcSize, Range MatRow[], Range MatCol[], int *properties[], Mat &src, Mat &dst)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+vector< vector< Point > > {\b processamento} (Mat HSV, Mat bin)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+double {\b calculation} (vector< vector< Point >> region, Mat image)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b _tmain} (int argc, char **argv)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b radius}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b base}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b height}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b offsetX}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b offsetY}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b text_offsetX}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b text_offsetY}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b fontFace}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b scale}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b left_text}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b sizeCols}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b sizeRows}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\b type}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b _szWidth}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b _szHeight}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b delta}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b _minHue}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b _minSat}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b _minVal}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b _maxHue}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b _maxSat}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b _maxVal}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macro Definition Documentation\par
+\pard\plain 
+{\xe \v APPROXIMATION\:main.cpp}
+{\xe \v main.cpp\:APPROXIMATION}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define APPROXIMATION\~ 3}}
+\par
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 80 of file main.cpp.}\par
+{
+Referenced by processamento().}\par
+}
+{\xe \v AUTOBUSCA_ALTURA\:main.cpp}
+{\xe \v main.cpp\:AUTOBUSCA_ALTURA}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define AUTOBUSCA_ALTURA\~ 15}}
+\par
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 75 of file main.cpp.}\par
+{
+Referenced by processamento().}\par
+}
+{\xe \v AUTOBUSCA_LARGURA\:main.cpp}
+{\xe \v main.cpp\:AUTOBUSCA_LARGURA}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define AUTOBUSCA_LARGURA\~ 5}}
+\par
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 76 of file main.cpp.}\par
+{
+Referenced by processamento().}\par
+}
+{\xe \v AUTOBUSCA_PULO\:main.cpp}
+{\xe \v main.cpp\:AUTOBUSCA_PULO}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define AUTOBUSCA_PULO\~ 1}}
+\par
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 79 of file main.cpp.}\par
+{
+Referenced by processamento().}\par
+}
+{\xe \v Ax\:main.cpp}
+{\xe \v main.cpp\:Ax}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define Ax\~ 11.935}}
+\par
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 39 of file main.cpp.}\par
+{
+Referenced by _tmain().}\par
+}
+{\xe \v BASE\:main.cpp}
+{\xe \v main.cpp\:BASE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define BASE\~ 134}}
+\par
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 84 of file main.cpp.}\par
+{
+Referenced by _tmain().}\par
+}
+{\xe \v Bx\:main.cpp}
+{\xe \v main.cpp\:Bx}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define Bx\~ -6.7718}}
+\par
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 40 of file main.cpp.}\par
+{
+Referenced by _tmain().}\par
+}
+{\xe \v CAMERA_ID\:main.cpp}
+{\xe \v main.cpp\:CAMERA_ID}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define CAMERA_ID\~ 1}}
+\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 42 of file main.cpp.}\par
+{
+Referenced by _tmain().}\par
+}
+{\xe \v CAMERA_SEARCH\:main.cpp}
+{\xe \v main.cpp\:CAMERA_SEARCH}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define CAMERA_SEARCH\~ false}}
+\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 41 of file main.cpp.}\par
+{
+Referenced by _tmain().}\par
+}
+{\xe \v deltaGaussianBlur\:main.cpp}
+{\xe \v main.cpp\:deltaGaussianBlur}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define deltaGaussianBlur\~ 700}}
+\par
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 65 of file main.cpp.}\par
+{
+Referenced by _tmain().}\par
+}
+{\xe \v DRAWING_CONFIG_WINDOW\:main.cpp}
+{\xe \v main.cpp\:DRAWING_CONFIG_WINDOW}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define DRAWING_CONFIG_WINDOW\~ "Referencia - Config"}}
+\par
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 43 of file main.cpp.}\par
+{
+Referenced by _tmain().}\par
+}
+{\xe \v ERR_EMPTY_IMAGES\:main.cpp}
+{\xe \v main.cpp\:ERR_EMPTY_IMAGES}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define ERR_EMPTY_IMAGES\~ -36}}
+\par
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 97 of file main.cpp.}\par
+{
+Referenced by _tmain().}\par
+}
+{\xe \v ERR_INITIAL_READ_FRAME\:main.cpp}
+{\xe \v main.cpp\:ERR_INITIAL_READ_FRAME}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define ERR_INITIAL_READ_FRAME\~ -34}}
+\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 95 of file main.cpp.}\par
+{
+Referenced by _tmain().}\par
+}
+{\xe \v ERR_LOAD_CAMERA\:main.cpp}
+{\xe \v main.cpp\:ERR_LOAD_CAMERA}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define ERR_LOAD_CAMERA\~ -33}}
+\par
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 94 of file main.cpp.}\par
+{
+Referenced by _tmain().}\par
+}
+{\xe \v ERR_NO_CAMERA\:main.cpp}
+{\xe \v main.cpp\:ERR_NO_CAMERA}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define ERR_NO_CAMERA\~ -32}}
+\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 93 of file main.cpp.}\par
+{
+Referenced by searchCam().}\par
+}
+{\xe \v ERR_READ_FRAME\:main.cpp}
+{\xe \v main.cpp\:ERR_READ_FRAME}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define ERR_READ_FRAME\~ -35}}
+\par
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 96 of file main.cpp.}\par
+{
+Referenced by _tmain().}\par
+}
+{\xe \v FULL_WHEIGHT\:main.cpp}
+{\xe \v main.cpp\:FULL_WHEIGHT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define FULL_WHEIGHT\~ 1.0}}
+\par
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 58 of file main.cpp.}\par
+{
+Referenced by drawModel().}\par
+}
+{\xe \v HALF_WHEIGHT\:main.cpp}
+{\xe \v main.cpp\:HALF_WHEIGHT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define HALF_WHEIGHT\~ 0.5}}
+\par
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 60 of file main.cpp.}\par
+}
+{\xe \v HEIGHT\:main.cpp}
+{\xe \v main.cpp\:HEIGHT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define HEIGHT\~ 34}}
+\par
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 85 of file main.cpp.}\par
+{
+Referenced by _tmain().}\par
+}
+{\xe \v MAX_AREA\:main.cpp}
+{\xe \v main.cpp\:MAX_AREA}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define MAX_AREA\~ 400}}
+\par
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 82 of file main.cpp.}\par
+{
+Referenced by processamento().}\par
+}
+{\xe \v MAX_DRAWING_CIRCLE_RADIUS\:main.cpp}
+{\xe \v main.cpp\:MAX_DRAWING_CIRCLE_RADIUS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define MAX_DRAWING_CIRCLE_RADIUS\~ 400}}
+\par
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 48 of file main.cpp.}\par
+{
+Referenced by createDrawWindow().}\par
+}
+{\xe \v MAX_DRAWING_RECT_BASE\:main.cpp}
+{\xe \v main.cpp\:MAX_DRAWING_RECT_BASE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define MAX_DRAWING_RECT_BASE\~ 400}}
+\par
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 49 of file main.cpp.}\par
+{
+Referenced by createDrawWindow().}\par
+}
+{\xe \v MAX_DRAWING_RECT_HEIGHT\:main.cpp}
+{\xe \v main.cpp\:MAX_DRAWING_RECT_HEIGHT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define MAX_DRAWING_RECT_HEIGHT\~ 400}}
+\par
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 50 of file main.cpp.}\par
+{
+Referenced by createDrawWindow().}\par
+}
+{\xe \v MAX_FONT_SCALE\:main.cpp}
+{\xe \v main.cpp\:MAX_FONT_SCALE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define MAX_FONT_SCALE\~ 30}}
+\par
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 52 of file main.cpp.}\par
+{
+Referenced by createDrawWindow().}\par
+}
+{\xe \v MAX_FONT_TYPE\:main.cpp}
+{\xe \v main.cpp\:MAX_FONT_TYPE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define MAX_FONT_TYPE\~ 7}}
+\par
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 51 of file main.cpp.}\par
+{
+Referenced by createDrawWindow().}\par
+}
+{\xe \v MAX_LEFT_TEXT_OFFSET\:main.cpp}
+{\xe \v main.cpp\:MAX_LEFT_TEXT_OFFSET}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define MAX_LEFT_TEXT_OFFSET\~ 50}}
+\par
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 54 of file main.cpp.}\par
+}
+{\xe \v MAX_TEXT_OFFSET\:main.cpp}
+{\xe \v main.cpp\:MAX_TEXT_OFFSET}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define MAX_TEXT_OFFSET\~ 200}}
+\par
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 53 of file main.cpp.}\par
+{
+Referenced by createDrawWindow().}\par
+}
+{\xe \v maxHue\:main.cpp}
+{\xe \v main.cpp\:maxHue}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define maxHue\~ 179}}
+\par
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 69 of file main.cpp.}\par
+{
+Referenced by _tmain(), and processamento().}\par
+}
+{\xe \v maxPoints\:main.cpp}
+{\xe \v main.cpp\:maxPoints}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define maxPoints\~ 10}}
+\par
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 72 of file main.cpp.}\par
+{
+Referenced by ajuste(), and processamento().}\par
+}
+{\xe \v maxSat\:main.cpp}
+{\xe \v main.cpp\:maxSat}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define maxSat\~ 255}}
+\par
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 70 of file main.cpp.}\par
+{
+Referenced by _tmain(), and processamento().}\par
+}
+{\xe \v maxVal\:main.cpp}
+{\xe \v main.cpp\:maxVal}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define maxVal\~ 255}}
+\par
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 71 of file main.cpp.}\par
+{
+Referenced by _tmain(), and processamento().}\par
+}
+{\xe \v MIN_AREA\:main.cpp}
+{\xe \v main.cpp\:MIN_AREA}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define MIN_AREA\~ 200}}
+\par
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 81 of file main.cpp.}\par
+{
+Referenced by processamento().}\par
+}
+{\xe \v minHue\:main.cpp}
+{\xe \v main.cpp\:minHue}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define minHue\~ 90}}
+\par
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 66 of file main.cpp.}\par
+{
+Referenced by _tmain(), and processamento().}\par
+}
+{\xe \v MINIMAL_MATCH\:main.cpp}
+{\xe \v main.cpp\:MINIMAL_MATCH}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define MINIMAL_MATCH\~ 0.4}}
+\par
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 78 of file main.cpp.}\par
+{
+Referenced by processamento().}\par
+}
+{\xe \v minSat\:main.cpp}
+{\xe \v main.cpp\:minSat}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define minSat\~ 0}}
+\par
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 67 of file main.cpp.}\par
+{
+Referenced by _tmain(), and processamento().}\par
+}
+{\xe \v minVal\:main.cpp}
+{\xe \v main.cpp\:minVal}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define minVal\~ 0}}
+\par
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 68 of file main.cpp.}\par
+{
+Referenced by _tmain(), and processamento().}\par
+}
+{\xe \v NO_WHEIGHT\:main.cpp}
+{\xe \v main.cpp\:NO_WHEIGHT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define NO_WHEIGHT\~ 0}}
+\par
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 62 of file main.cpp.}\par
+{
+Referenced by drawModel().}\par
+}
+{\xe \v noTrans\:main.cpp}
+{\xe \v main.cpp\:noTrans}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define noTrans\~ 100}}
+\par
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 74 of file main.cpp.}\par
+}
+{\xe \v OFFSETX\:main.cpp}
+{\xe \v main.cpp\:OFFSETX}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define OFFSETX\~ 405}}
+\par
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 86 of file main.cpp.}\par
+{
+Referenced by _tmain().}\par
+}
+{\xe \v OFFSETY\:main.cpp}
+{\xe \v main.cpp\:OFFSETY}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define OFFSETY\~ 356}}
+\par
+{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 87 of file main.cpp.}\par
+{
+Referenced by _tmain().}\par
+}
+{\xe \v OFFSETY_2RECT\:main.cpp}
+{\xe \v main.cpp\:OFFSETY_2RECT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define OFFSETY_2RECT\~ 50}}
+\par
+{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 88 of file main.cpp.}\par
+{
+Referenced by drawModel().}\par
+}
+{\xe \v ONE_FOURTH_WHEIGHT\:main.cpp}
+{\xe \v main.cpp\:ONE_FOURTH_WHEIGHT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define ONE_FOURTH_WHEIGHT\~ 0.25}}
+\par
+{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 61 of file main.cpp.}\par
+}
+{\xe \v OUTLINE_COLOR\:main.cpp}
+{\xe \v main.cpp\:OUTLINE_COLOR}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define OUTLINE_COLOR\~ Scalar(0,255,0)}}
+\par
+{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 55 of file main.cpp.}\par
+{
+Referenced by drawModel().}\par
+}
+{\xe \v OUTLINE_THICKNESS\:main.cpp}
+{\xe \v main.cpp\:OUTLINE_THICKNESS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define OUTLINE_THICKNESS\~ 4}}
+\par
+{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 56 of file main.cpp.}\par
+{
+Referenced by drawModel().}\par
+}
+{\xe \v PRECISAO_BUSCA\:main.cpp}
+{\xe \v main.cpp\:PRECISAO_BUSCA}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define PRECISAO_BUSCA\~ 1*{\b AUTOBUSCA_ALTURA}*{\b AUTOBUSCA_LARGURA}}}
+\par
+{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 77 of file main.cpp.}\par
+{
+Referenced by ajuste().}\par
+}
+{\xe \v PROGRAM_WINDOW\:main.cpp}
+{\xe \v main.cpp\:PROGRAM_WINDOW}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define PROGRAM_WINDOW\~ "Programa"}}
+\par
+{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 44 of file main.cpp.}\par
+{
+Referenced by _tmain().}\par
+}
+{\xe \v szHeight\:main.cpp}
+{\xe \v main.cpp\:szHeight}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define szHeight\~ 29}}
+\par
+{\bkmkstart AAAAAAAABV}
+{\bkmkend AAAAAAAABV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 64 of file main.cpp.}\par
+{
+Referenced by _tmain().}\par
+}
+{\xe \v szWidth\:main.cpp}
+{\xe \v main.cpp\:szWidth}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define szWidth\~ 29}}
+\par
+{\bkmkstart AAAAAAAABW}
+{\bkmkend AAAAAAAABW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 63 of file main.cpp.}\par
+{
+Referenced by _tmain().}\par
+}
+{\xe \v TEXT_THICKNESS\:main.cpp}
+{\xe \v main.cpp\:TEXT_THICKNESS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define TEXT_THICKNESS\~ 3}}
+\par
+{\bkmkstart AAAAAAAABX}
+{\bkmkend AAAAAAAABX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 57 of file main.cpp.}\par
+{
+Referenced by drawModel().}\par
+}
+{\xe \v THREE_FOURTHS_WHEIGHT\:main.cpp}
+{\xe \v main.cpp\:THREE_FOURTHS_WHEIGHT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define THREE_FOURTHS_WHEIGHT\~ 0.75}}
+\par
+{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 59 of file main.cpp.}\par
+{
+Referenced by drawModel().}\par
+}
+{\xe \v Trans\:main.cpp}
+{\xe \v main.cpp\:Trans}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define Trans\~ 80}}
+\par
+{\bkmkstart AAAAAAAABZ}
+{\bkmkend AAAAAAAABZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 73 of file main.cpp.}\par
+}
+{\xe \v TYPE_CIRCLE\:main.cpp}
+{\xe \v main.cpp\:TYPE_CIRCLE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define TYPE_CIRCLE\~ "CIRCLE"}}
+\par
+{\bkmkstart AAAAAAAACA}
+{\bkmkend AAAAAAAACA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 45 of file main.cpp.}\par
+{
+Referenced by _tmain(), createDrawWindow(), and drawModel().}\par
+}
+{\xe \v TYPE_RECT\:main.cpp}
+{\xe \v main.cpp\:TYPE_RECT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define TYPE_RECT\~ "RECT"}}
+\par
+{\bkmkstart AAAAAAAACB}
+{\bkmkend AAAAAAAACB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 46 of file main.cpp.}\par
+{
+Referenced by _tmain(), createDrawWindow(), and drawModel().}\par
+}
+{\xe \v TYPE_RECT2\:main.cpp}
+{\xe \v main.cpp\:TYPE_RECT2}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define TYPE_RECT2\~ "RECT2"}}
+\par
+{\bkmkstart AAAAAAAACC}
+{\bkmkend AAAAAAAACC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 47 of file main.cpp.}\par
+{
+Referenced by drawModel().}\par
+}
+{\xe \v UNIDADE\:main.cpp}
+{\xe \v main.cpp\:UNIDADE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define UNIDADE\~ "mg"}}
+\par
+{\bkmkstart AAAAAAAACD}
+{\bkmkend AAAAAAAACD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 83 of file main.cpp.}\par
+{
+Referenced by _tmain().}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v _tmain\:main.cpp}
+{\xe \v main.cpp\:_tmain}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int _tmain (int {\i argc}, char ** {\i argv})}}
+\par
+{\bkmkstart AAAAAAAACE}
+{\bkmkend AAAAAAAACE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 161 of file main.cpp.}\par
+{
+References _maxHue, _maxSat, _maxVal, _minHue, _minSat, _minVal, _szHeight, _szWidth, Ax, BASE, base, Bx, calculation(), CAMERA_ID, CAMERA_SEARCH, createDrawWindow(), delta, deltaGaussianBlur, DRAWING_CONFIG_WINDOW, drawModel(), ERR_EMPTY_IMAGES, ERR_INITIAL_READ_FRAME, ERR_LOAD_CAMERA, ERR_READ_FRAME, filter(), HEIGHT, height, maxHue, maxSat, maxVal, minHue, minSat, minVal, OFFSETX, offsetX, OFFSETY, offsetY, processamento(), PROGRAM_WINDOW, radius, searchCam(), sizeCols, sizeRows, szHeight, szWidth, type, TYPE_CIRCLE, TYPE_RECT, and UNIDADE.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 161                                    \{\par
+162     base = BASE;\par
+163     height = HEIGHT;\par
+164     offsetX = OFFSETX;\par
+165     offsetY = OFFSETY;\par
+166     VideoCapture camera;\par
+167     Mat frame;\par
+168     int camID;\par
+169     char command;\par
+170     type = TYPE_RECT;\par
+171 \par
+172     //Caso a escolha de cameras esteja habilitada.\par
+173     if (CAMERA_SEARCH)\par
+174         camID = searchCam(&camera);\par
+175     else\par
+176         camID = CAMERA_ID;\par
+177 \par
+178     //Abre a camera selecionada.\par
+179     camera.open(camID);\par
+180 \par
+181     //Caso a camera nao consiga ser aberta corretamente retorna um erro.\par
+182     if( !camera.isOpened() ) \{\par
+183         cout << "Error " << ERR_LOAD_CAMERA;\par
+184         destroyAllWindows();\par
+185         return (ERR_LOAD_CAMERA);\par
+186     \}\par
+187 \par
+188     //Ler frame da camera\par
+189     if ( !camera.read(frame) ) \{\par
+190         cout << "Error " << ERR_INITIAL_READ_FRAME;\par
+191         destroyAllWindows();\par
+192         return (ERR_INITIAL_READ_FRAME);\par
+193     \}\par
+194 \par
+195     //Criando janela para configuracao do modelo.\par
+196     sizeCols = frame.cols;\par
+197     sizeRows = frame.rows;\par
+198     createDrawWindow(DRAWING_CONFIG_WINDOW,type);\par
+199         \par
+200     //Loop para mostrar a imagem\par
+201     while ( (command = waitKey(30)) != 27) \{\par
+202 \par
+203         //Ler proximo frame.\par
+204         if ( !camera.read(frame) ) \{\par
+205             cout << "Error " << ERR_READ_FRAME;\par
+206             destroyAllWindows();\par
+207             return (ERR_READ_FRAME);\par
+208         \}\par
+209 \par
+210         //Junta p frame com o modelo e mostra o resultado.\par
+211         frame = drawModel(type , frame);\par
+212         //frame = drawModel(TYPE_RECT2 , frame);\par
+213         imshow(PROGRAM_WINDOW,frame);   \par
+214 \par
+215         //Comando para processar a imagem\par
+216         if ( command == ' ') \{\par
+217             Mat control,control1;\par
+218             Mat test,test1;\par
+219 \par
+220             //Selecionando imagens com o controle e teste\par
+221             if(type == TYPE_CIRCLE) \{\par
+222                 control = frame.colRange(offsetX-radius,offsetX);\par
+223                 control = control.rowRange(offsetY-radius,offsetY+radius);\par
+224                 test = frame.colRange(offsetX,offsetX+radius);\par
+225                 test = test.rowRange(offsetY-radius,offsetY+radius);\par
+226             \}\par
+227 \par
+228             else if(type == TYPE_RECT) \{\par
+229                 control = frame.colRange(offsetX-base/2,offsetX);\par
+230                 control = control.rowRange(offsetY-height/2,offsetY+height/2);\par
+231                 test = frame.colRange(offsetX,offsetX+base/2);\par
+232                 test = test.rowRange(offsetY-height/2,offsetY+height/2);\par
+233 \par
+234                 /*control1 = frame.colRange(offsetX-base/2,offsetX);\par
+235                 control1 = control1.rowRange(offsetY-height/2 - OFFSETY_2RECT,offsetY+height/2 - OFFSETY_2RECT);\par
+236                 test1 = frame.colRange(offsetX,offsetX+base/2);\par
+237                 test1 = test1.rowRange(offsetY-height/2 - OFFSETY_2RECT,offsetY+height/2 - OFFSETY_2RECT);*/\par
+238             \}\par
+239 \par
+240             if ( control.empty() || test.empty() ) \{\par
+241                 cout << "Error " << ERR_EMPTY_IMAGES ;\par
+242                 destroyAllWindows();\par
+243                 return(ERR_EMPTY_IMAGES);\par
+244             \}\par
+245 \par
+246             /********************************************************/\par
+247             //Comeco do processamento\par
+248             _szWidth = szWidth; _szHeight = szHeight; delta = deltaGaussianBlur;\par
+249             _minHue = minHue; _minSat = minSat; _minVal = minVal; _maxHue = maxHue; _maxSat = maxSat; _maxVal = maxVal;\par
+250             Mat test_HSV = test.clone();\par
+251             Mat control_HSV = control.clone();\par
+252             //Mat test1_HSV = test1.clone();\par
+253             //Mat control1_HSV = control1.clone();\par
+254             Mat test_binary = Mat::zeros(test.rows,test.cols,CV_8UC1),control_binary = Mat::zeros(control.rows,control.cols,CV_8UC1);\par
+255             //Mat test1_binary = Mat::zeros(test1.rows,test1.cols,CV_8UC1),control1_binary = Mat::zeros(control1.rows,control1.cols,CV_8UC1);\par
+256             vector<vector<Point>> region_control, region_test, region_control1, region_test1;\par
+257             cvtColor(control_HSV,control_HSV,CV_BGR2HSV);\par
+258             cvtColor(test_HSV,test_HSV,CV_BGR2HSV);\par
+259             //cvtColor(control1_HSV,control1_HSV,CV_BGR2HSV);\par
+260             //cvtColor(test1_HSV,test1_HSV,CV_BGR2HSV);\par
+261 \par
+262             filter(control_HSV,control_HSV);\par
+263             filter(test_HSV,test_HSV);\par
+264             //filter(control1_HSV,control1_HSV);\par
+265             //filter(test1_HSV,test1_HSV);\par
+266 \par
+267 \par
+268             region_control = processamento(control_HSV,control_binary);\par
+269             region_test = processamento(test_HSV,test_binary);\par
+270             //region_control1 = processamento(control1_HSV,control1_binary);\par
+271             //region_test1 = processamento(test1_HSV,test1_binary);\par
+272                         \par
+273             if( !region_control.empty() && !region_test.empty())\{ //&& !region_control1.empty() && !region_test1.empty()) \{\par
+274                 double concentration = calculation(region_test,test_HSV)/calculation(region_control,control_HSV);\par
+275                 //double concentration1 = calculation(region_control1,control1_HSV)/calculation(region_test1,test1_HSV);\par
+276                 concentration = Ax*concentration + Bx;\par
+277                 //concentration1 = Ax*concentration1 + Bx;\par
+278                 cout << "Concentracao da amostra:\\n" << concentration << " " << UNIDADE << endl ;//<< concentration1 << " " << UNIDADE << endl;\par
+279                 test_binary = control_binary = Mat::zeros(frame.rows,frame.cols,CV_8UC1);\par
+280                 //test1_binary = control1_binary = Mat::zeros(frame.rows,frame.cols,CV_8UC1);\par
+281                 drawContours(test_binary,region_test,0,Scalar(255),-1,8,noArray(),2,Point(offsetX,offsetY-height/2));\par
+282                 drawContours(control_binary,region_control,0,Scalar(255),-1,8,noArray(),2,Point(offsetX-base/2,offsetY-height/2));\par
+283                 //drawContours(test1_binary,region_test1,0,Scalar(255),-1,8,noArray(),2,Point(offsetX,offsetY-height/2 - OFFSETY_2RECT));\par
+284                 //drawContours(control1_binary,region_control1,0,Scalar(255),-1,8,noArray(),2,Point(offsetX-base/2,offsetY-height/2 - OFFSETY_2RECT));\par
+285                 add(control_binary,test_binary,control_binary);\par
+286                 //add(control_binary,test1_binary,control_binary);\par
+287                 //add(control_binary,control1_binary,control_binary);\par
+288                 cvtColor(control_binary,control_binary,CV_GRAY2BGR);\par
+289                 addWeighted(frame,0.8,control_binary,0.2,0,frame);\par
+290                 imshow(PROGRAM_WINDOW,frame);\par
+291             \}\par
+292             else\par
+293                 cout << "Concentracao da amostra:\\n 0 " << UNIDADE << endl;\par
+294 \par
+295             waitKey();\par
+296 \par
+297             /********************************************************/\par
+298         \}\par
+299     \}\par
+300     destroyAllWindows();\par
+301     return 0;\par
+302 \}\par
+}
+{
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8cpp_a85563ce6e90d50877f86d857c9f57eb9_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}\par
+}
+{\xe \v ajuste\:main.cpp}
+{\xe \v main.cpp\:ajuste}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ajuste (int {\i VcSize}, Range {\i MatRow}[], Range {\i MatCol}[], int * {\i properties}[], Mat & {\i src}, Mat & {\i dst})}}
+\par
+{\bkmkstart AAAAAAAACF}
+{\bkmkend AAAAAAAACF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 462 of file main.cpp.}\par
+{
+References allOnes(), maxPoints, PRECISAO_BUSCA, and proc().}\par
+{
+Referenced by processamento().}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 462                                                                                                \{\par
+463     Mat VcMat[maxPoints];\par
+464 \par
+465     if (VcSize == 0) \{\par
+466         cout << "VcSize = 0\\n";\par
+467         return;\par
+468     \}\par
+469     \par
+470     int u = 0;\par
+471     //Os minimos primeiro\par
+472     while(u < 3) \{\par
+473         //Incrementa a primeira propriedade\par
+474         *properties[u] += 1;\par
+475         proc(src,dst);\par
+476 \par
+477         //Seleciona todas as imagens\par
+478         for (int y = 0; y < VcSize; y++) \{\par
+479             VcMat[y] = dst(MatRow[y],MatCol[y]);\par
+480         \}\par
+481 \par
+482         //Verifica se as imagens estao de acordo\par
+483         if(!allOnes(VcMat,VcSize,PRECISAO_BUSCA)) \{\par
+484             *properties[u] -= 1;\par
+485             proc(src,dst);\par
+486             for (int y = 0; y < VcSize; y++) \{\par
+487                 VcMat[y] = dst(MatRow[y],MatCol[y]);\par
+488             \}\par
+489             u += 1;\par
+490         \}\par
+491     \}\par
+492     //mesmos passos da anterior, mas para os valores maximos\par
+493     while (u < 6) \{\par
+494         *properties[u] -= 1;\par
+495         proc(src,dst);\par
+496         for (int y = 0; y < VcSize; y++) \{\par
+497             VcMat[y] = dst(MatRow[y],MatCol[y]);\par
+498         \}\par
+499         if(!allOnes(VcMat,VcSize,PRECISAO_BUSCA)) \{\par
+500             *properties[u] += 1;\par
+501             proc(src,dst);\par
+502             for (int y = 0; y < VcSize; y++) \{\par
+503                 VcMat[y] = dst(MatRow[y],MatCol[y]);\par
+504             \}\par
+505             u += 1;\par
+506         \}\par
+507     \}\par
+508 \}\par
+}
+{
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8cpp_adec1dced023c091070e2ea77058e824d_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}\par
+{
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8cpp_adec1dced023c091070e2ea77058e824d_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}\par
+}
+{\xe \v allOnes\:main.cpp}
+{\xe \v main.cpp\:allOnes}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool allOnes (Mat {\i VcMat}[], int {\i VcSize}, int {\i numElements})}}
+\par
+{\bkmkstart AAAAAAAACG}
+{\bkmkend AAAAAAAACG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 443 of file main.cpp.}\par
+{
+Referenced by ajuste().}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 443                                                        \{\par
+444     bool res = true;\par
+445     for(int z = 0; z < VcSize; z++) \{\par
+446         if(countNonZero(VcMat[z]) < numElements) \{\par
+447             res = false;\par
+448             break;\par
+449         \}\par
+450     \}\par
+451     return res;\par
+452 \}\par
+}
+{
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8cpp_a485725f864aa7ae9633b72eb64bcd35d_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}\par
+}
+{\xe \v calculation\:main.cpp}
+{\xe \v main.cpp\:calculation}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+double calculation (vector< vector< Point >> {\i region}, Mat {\i image})}}
+\par
+{\bkmkstart AAAAAAAACH}
+{\bkmkend AAAAAAAACH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 562 of file main.cpp.}\par
+{
+Referenced by _tmain().}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 562                                                             \{\par
+563     if( !region.empty() ) \{\par
+564         Mat bin = Mat::zeros(image.rows,image.cols,CV_8UC1);\par
+565         drawContours(bin,region,0,Scalar(255),-1);\par
+566         Scalar mean,stdd;\par
+567         meanStdDev(image,mean,stdd,bin);\par
+568         cout << mean << endl << stdd << endl;\par
+569         return (mean[1] + 2*stdd[1]);\par
+570     \}\par
+571 \par
+572     else\par
+573         return 0;\par
+574 \}}
+{
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8cpp_a2eda67e2586d9cd56c494f02239c73e9_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}\par
+}
+{\xe \v createDrawWindow\:main.cpp}
+{\xe \v main.cpp\:createDrawWindow}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void createDrawWindow (string {\i name}, string {\i type})}}
+\par
+{\bkmkstart AAAAAAAACI}
+{\bkmkend AAAAAAAACI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 347 of file main.cpp.}\par
+{
+References base, fontFace, height, left_text, MAX_DRAWING_CIRCLE_RADIUS, MAX_DRAWING_RECT_BASE, MAX_DRAWING_RECT_HEIGHT, MAX_FONT_SCALE, MAX_FONT_TYPE, MAX_TEXT_OFFSET, offsetX, offsetY, radius, scale, sizeCols, sizeRows, text_offsetX, text_offsetY, TYPE_CIRCLE, and TYPE_RECT.}\par
+{
+Referenced by _tmain().}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 347                                                   \{\par
+348     //Janela para as configuracoes do modelo com barras para altera-las\par
+349     namedWindow(name,CV_WINDOW_FREERATIO);\par
+350     \par
+351     //Se o modelo e um retangulo\par
+352     if (type == TYPE_RECT) \{\par
+353         createTrackbar("Base",name,&base,MAX_DRAWING_RECT_BASE);        //Base do retangulo\par
+354         createTrackbar("Height",name,&height,MAX_DRAWING_RECT_HEIGHT);  //Altura do retangulo\par
+355     \}\par
+356     //Se o modelo e um circulo\par
+357     else if (type == TYPE_CIRCLE) \{\par
+358         createTrackbar("Radius",name,&radius,MAX_DRAWING_CIRCLE_RADIUS);//Raio do ciruclo\par
+359     \}\par
+360 \par
+361     createTrackbar("offsetX",name,&offsetX,sizeCols);                   //Offset X do centro\par
+362     createTrackbar("offsety",name,&offsetY,sizeRows);                   //Offset Y do centro\par
+363     createTrackbar("Text X",name,&text_offsetX,MAX_TEXT_OFFSET);        //Offset X do texto\par
+364     createTrackbar("Text Y",name,&text_offsetY,MAX_TEXT_OFFSET);        //Offset Y do texto\par
+365     createTrackbar("left_text",name,&left_text,MAX_TEXT_OFFSET);        //Offset X adicional do texto esquerdo\par
+366     createTrackbar("fontFace",name,&fontFace,MAX_FONT_TYPE);            //Fonte do texto\par
+367     createTrackbar("scale",name,&scale,MAX_FONT_SCALE);                 //Tamanho do texto\par
+368 \par
+369     return;\par
+370 \}\par
+}
+{
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8cpp_a2c80bf65c83f15c94722f105aa99f9ac_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}\par
+}
+{\xe \v drawModel\:main.cpp}
+{\xe \v main.cpp\:drawModel}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Mat drawModel (string {\i type}, Mat {\i image})}}
+\par
+{\bkmkstart AAAAAAAACJ}
+{\bkmkend AAAAAAAACJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 372 of file main.cpp.}\par
+{
+References base, fontFace, FULL_WHEIGHT, height, left_text, NO_WHEIGHT, offsetX, offsetY, OFFSETY_2RECT, OUTLINE_COLOR, OUTLINE_THICKNESS, radius, scale, text_offsetX, text_offsetY, TEXT_THICKNESS, THREE_FOURTHS_WHEIGHT, TYPE_CIRCLE, TYPE_RECT, and TYPE_RECT2.}\par
+{
+Referenced by _tmain().}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 372                                       \{\par
+373     //Initialize drawing to all black.\par
+374     Mat drawing = Mat::zeros(image.rows,image.cols,CV_8UC3);\par
+375     \par
+376     \par
+377     if (type == TYPE_CIRCLE) \{\par
+378         //Draws a circle in drawing.\par
+379         circle(drawing,Point(offsetX,offsetY),radius,OUTLINE_COLOR,OUTLINE_THICKNESS);\par
+380 \par
+381         //Draws the vertical middle line of the circle.\par
+382         line(drawing,Point(offsetX,(offsetY-radius)),Point(offsetX,(offsetY+radius)),OUTLINE_COLOR,OUTLINE_THICKNESS);\par
+383 \par
+384         //Write text.\par
+385         putText(drawing,"C",Point((offsetX-radius-text_offsetX-left_text),(offsetY+text_offsetY)),fontFace,scale/10.0,OUTLINE_COLOR,TEXT_THICKNESS);\par
+386         putText(drawing,"T",Point((offsetX+radius+text_offsetX),(offsetY+text_offsetY)),fontFace,scale/10.0,OUTLINE_COLOR,TEXT_THICKNESS);\par
+387     \}\par
+388     \par
+389     else if (type == TYPE_RECT) \{\par
+390         //Draws a rectangle in drawing.\par
+391         rectangle(drawing,Point(offsetX-base/2,offsetY-height/2),Point(offsetX+base/2,offsetY+height/2),Scalar(0,255,0),OUTLINE_THICKNESS);\par
+392         \par
+393         //Draws the vertical middle line of the rectangle.\par
+394         line(drawing,Point(offsetX,(offsetY-height/2)),Point(offsetX,(offsetY+height/2)),OUTLINE_COLOR,OUTLINE_THICKNESS);\par
+395         \par
+396         //Write text.\par
+397         putText(drawing,"C",Point((offsetX-base/2-text_offsetX-left_text),(offsetY+text_offsetY)),fontFace,scale/10.0,OUTLINE_COLOR,TEXT_THICKNESS);\par
+398         putText(drawing,"T",Point((offsetX+base/2+text_offsetX),(offsetY+text_offsetY)),fontFace,scale/10.0,OUTLINE_COLOR,TEXT_THICKNESS);\par
+399 \par
+400     \}\par
+401 \par
+402     else if (type == TYPE_RECT2) \{\par
+403         //Draws a rectangle in drawing.\par
+404         rectangle(drawing,Point(offsetX-base/2,offsetY-height/2 - OFFSETY_2RECT),Point(offsetX+base/2,offsetY+height/2 - OFFSETY_2RECT),Scalar(0,255,0),OUTLINE_THICKNESS);\par
+405         \par
+406         //Draws the vertical middle line of the rectangle.\par
+407         line(drawing,Point(offsetX,(offsetY-height/2 - OFFSETY_2RECT)),Point(offsetX,(offsetY+height/2-OFFSETY_2RECT)),OUTLINE_COLOR,OUTLINE_THICKNESS);\par
+408         \par
+409         //Write text.\par
+410         putText(drawing,"C",Point((offsetX-base/2-text_offsetX-left_text),(offsetY+text_offsetY-OFFSETY_2RECT)),fontFace,scale/10.0,OUTLINE_COLOR,TEXT_THICKNESS);\par
+411         putText(drawing,"T",Point((offsetX+base/2+text_offsetX),(offsetY+text_offsetY-OFFSETY_2RECT)),fontFace,scale/10.0,OUTLINE_COLOR,TEXT_THICKNESS);\par
+412 \par
+413     \}\par
+414     \par
+415     //Add the actual frame with the drawing, forming a new image.\par
+416     addWeighted(image,FULL_WHEIGHT,drawing,THREE_FOURTHS_WHEIGHT,NO_WHEIGHT,image);\par
+417 \par
+418 \par
+419     return image;\par
+420 \}\par
+}
+{
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8cpp_aff29bef05524fd9d6b93d005a927e128_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}\par
+}
+{\xe \v filter\:main.cpp}
+{\xe \v main.cpp\:filter}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void filter (Mat & {\i src}, Mat & {\i dst})}}
+\par
+{\bkmkstart AAAAAAAACK}
+{\bkmkend AAAAAAAACK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 422 of file main.cpp.}\par
+{
+References _szHeight, _szWidth, and delta.}\par
+{
+Referenced by _tmain().}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 422                                 \{\par
+423     Size siz(_szWidth,_szHeight);\par
+424     GaussianBlur(src,dst,siz,delta/100.0);\par
+425     return;\par
+426 \}\par
+}
+{
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8cpp_a34ccd5a5f5e6c89511ed19c070eb3206_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}\par
+}
+{\xe \v proc\:main.cpp}
+{\xe \v main.cpp\:proc}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void proc (Mat & {\i src}, Mat & {\i dst})}}
+\par
+{\bkmkstart AAAAAAAACL}
+{\bkmkend AAAAAAAACL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 428 of file main.cpp.}\par
+{
+References _maxHue, _maxSat, _maxVal, _minHue, _minSat, and _minVal.}\par
+{
+Referenced by ajuste(), and processamento().}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 428                               \{\par
+429     inRange(src,Scalar(_minHue,_minSat,_minVal),Scalar(_maxHue,_maxSat,_maxVal),dst);\par
+430     return;\par
+431 \}\par
+}
+{
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8cpp_a3cacad06336486e3053a3cd8bdebe09e_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}\par
+}
+{\xe \v processamento\:main.cpp}
+{\xe \v main.cpp\:processamento}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+vector< vector< Point > > processamento (Mat {\i HSV}, Mat {\i bin})}}
+\par
+{\bkmkstart AAAAAAAACM}
+{\bkmkend AAAAAAAACM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 510 of file main.cpp.}\par
+{
+References _maxHue, _maxSat, _maxVal, _minHue, _minSat, _minVal, ajuste(), APPROXIMATION, AUTOBUSCA_ALTURA, AUTOBUSCA_LARGURA, AUTOBUSCA_PULO, MAX_AREA, maxHue, maxPoints, maxSat, maxVal, MIN_AREA, minHue, MINIMAL_MATCH, minSat, minVal, and proc().}\par
+{
+Referenced by _tmain().}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 510                                                       \{\par
+511     int *properties[6];\par
+512     Range MatRow[maxPoints];\par
+513     Range MatCol[maxPoints];\par
+514     double match = MINIMAL_MATCH,temp;\par
+515     vector<vector<Point>> best;\par
+516     vector<vector<Point>> contours;\par
+517     vector<Point> rect;\par
+518     rect.push_back(Point(1,1));\par
+519     rect.push_back(Point(1+AUTOBUSCA_LARGURA,1));\par
+520     rect.push_back(Point(1+AUTOBUSCA_LARGURA,1+AUTOBUSCA_ALTURA));\par
+521     rect.push_back(Point(1,1+AUTOBUSCA_ALTURA));\par
+522     rect.push_back(Point(1,1));\par
+523     properties[0] = &_minHue; properties[1] = &_minSat; properties[2] = &_minVal; properties[3] = &_maxHue; properties[4] = &_maxSat; properties[5] = &_maxVal;\par
+524     \par
+525     for( int ROWS = 0 ; ROWS < HSV.rows - AUTOBUSCA_ALTURA; ROWS+=AUTOBUSCA_PULO) \{\par
+526         for( int COLS = 0 ; COLS < HSV.cols - AUTOBUSCA_LARGURA; COLS+=AUTOBUSCA_PULO) \{\par
+527                 _minHue = minHue; _minSat = minSat; _minVal = minVal; _maxHue = maxHue; _maxSat = maxSat; _maxVal = maxVal;\par
+528                 proc(HSV,bin);\par
+529                 MatRow[0] = Range(ROWS,ROWS+AUTOBUSCA_ALTURA);\par
+530                 MatCol[0] = Range(COLS,COLS+AUTOBUSCA_LARGURA);\par
+531                 \par
+532                 ajuste(1,MatRow,MatCol,properties,HSV,bin);\par
+533                 cout << COLS << " x " << ROWS << endl;\par
+534         \par
+535                 findContours(bin, contours, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_SIMPLE);\par
+536                 cout << "Found " << contours.size() << " contours." << endl;\par
+537 \par
+538                 if(contours.size() == 1 && pointPolygonTest(contours[0],Point2f(COLS,ROWS),false) >= 0) \{\par
+539                     approxPolyDP(contours[0],contours[0],APPROXIMATION,true);\par
+540                     double area = contourArea(contours[0]);\par
+541                     temp = matchShapes(rect,contours[0],CV_CONTOURS_MATCH_I2,0);\par
+542                     cout << temp << endl;\par
+543                     /*mt = Mat::zeros(mt.rows,mt.cols,CV_8UC1);\par
+544                     drawContours(mt,contours,0,Scalar(255),-1);\par
+545                     imshow("Detection",mt);\par
+546                     cvtColor(mt,mtRGB,CV_GRAY2BGR);\par
+547                     show(Trans);*/\par
+548                     if(match > temp && area > MIN_AREA && temp != 0 && area < MAX_AREA) \{\par
+549                         match = temp;\par
+550                         best.clear();\par
+551                         best.push_back(contours[0]);\par
+552                         //if( !best.empty() ) cout << "printed" << endl;\par
+553                     \}\par
+554                     //waitKey();\par
+555                 \}\par
+556             \}\par
+557         \}\par
+558 \par
+559     return best;\par
+560 \}\par
+}
+{
+Here is the call graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8cpp_ae06205f6d61db52c006bf605c2b2f6f8_cgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}\par
+{
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8cpp_ae06205f6d61db52c006bf605c2b2f6f8_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}\par
+}
+{\xe \v searchCam\:main.cpp}
+{\xe \v main.cpp\:searchCam}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int searchCam (VideoCapture * {\i camera})}}
+\par
+{\bkmkstart AAAAAAAACN}
+{\bkmkend AAAAAAAACN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 305 of file main.cpp.}\par
+{
+References ERR_NO_CAMERA.}\par
+{
+Referenced by _tmain().}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 305                                      \{\par
+306     //Pesquisa todas as cameras possiveis\par
+307     int x,y;\par
+308     for (x=0 ; x<10; x++) \{\par
+309         //Abre a camera.\par
+310         camera->open(x);\par
+311 \par
+312         //Se falhar para abrir a camera 'y' sera nosso maximo de cameras.\par
+313         if(!camera->isOpened ()) \{\par
+314             y = x;\par
+315             x += 10;\par
+316         \}\par
+317         //Se nao falhar continua procurando.\par
+318         else \par
+319             camera->release();\par
+320     \}\par
+321 \par
+322     //Caso nao tenha cameras que possam ser usadas ocorre um erro.\par
+323     if (y == 0) \{\par
+324         cout << "Error " << ERR_NO_CAMERA << endl;\par
+325         destroyAllWindows();\par
+326         exit (ERR_NO_CAMERA);\par
+327     \}\par
+328 \par
+329     //Mostra as opcoes.\par
+330     cout << "Existem " << y << " cameras disponiveis.\\n\\nID das cameras:\\n";\par
+331     for(x=0;x<y;x++) cout << x << endl;\par
+332     cout << "\\nEscolha uma camera para usar.\\n> ";\par
+333 \par
+334     //Processa a escolha do usuario.\par
+335     escolha_camera:\par
+336     cin >> x;\par
+337     if(x < 0 || x >= y) \{\par
+338         cout << "\\nID de camera invalido, tente novamente.\\n> ";\par
+339         goto escolha_camera;\par
+340     \}\par
+341 \par
+342     //Retorna a camera desejada.\par
+343     system("cls");\par
+344     return x;\par
+345 \}\par
+}
+{
+Here is the caller graph for this function:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8cpp_abf53b5314d2e6e573cda0ab847c4f56a_icgraph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+}\par
+}
+{\xe \v show\:main.cpp}
+{\xe \v main.cpp\:show}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Mat show (Mat {\i src1}, Mat {\i src2}, int {\i percentage})}}
+\par
+{\bkmkstart AAAAAAAACO}
+{\bkmkend AAAAAAAACO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 434 of file main.cpp.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 434                                              \{\par
+435     Mat result;\par
+436     addWeighted(src1,percentage/100.0,src2,(100-percentage)/100.0,0.0,result);\par
+437     return result;\par
+438 \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variable Documentation\par
+\pard\plain 
+{\xe \v _maxHue\:main.cpp}
+{\xe \v main.cpp\:_maxHue}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int _maxHue}}
+\par
+{\bkmkstart AAAAAAAACP}
+{\bkmkend AAAAAAAACP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 122 of file main.cpp.}\par
+{
+Referenced by _tmain(), proc(), and processamento().}\par
+}
+{\xe \v _maxSat\:main.cpp}
+{\xe \v main.cpp\:_maxSat}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int _maxSat}}
+\par
+{\bkmkstart AAAAAAAACQ}
+{\bkmkend AAAAAAAACQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 122 of file main.cpp.}\par
+{
+Referenced by _tmain(), proc(), and processamento().}\par
+}
+{\xe \v _maxVal\:main.cpp}
+{\xe \v main.cpp\:_maxVal}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int _maxVal}}
+\par
+{\bkmkstart AAAAAAAACR}
+{\bkmkend AAAAAAAACR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 122 of file main.cpp.}\par
+{
+Referenced by _tmain(), proc(), and processamento().}\par
+}
+{\xe \v _minHue\:main.cpp}
+{\xe \v main.cpp\:_minHue}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int _minHue}}
+\par
+{\bkmkstart AAAAAAAACS}
+{\bkmkend AAAAAAAACS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 122 of file main.cpp.}\par
+{
+Referenced by _tmain(), proc(), and processamento().}\par
+}
+{\xe \v _minSat\:main.cpp}
+{\xe \v main.cpp\:_minSat}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int _minSat}}
+\par
+{\bkmkstart AAAAAAAACT}
+{\bkmkend AAAAAAAACT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 122 of file main.cpp.}\par
+{
+Referenced by _tmain(), proc(), and processamento().}\par
+}
+{\xe \v _minVal\:main.cpp}
+{\xe \v main.cpp\:_minVal}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int _minVal}}
+\par
+{\bkmkstart AAAAAAAACU}
+{\bkmkend AAAAAAAACU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 122 of file main.cpp.}\par
+{
+Referenced by _tmain(), proc(), and processamento().}\par
+}
+{\xe \v _szHeight\:main.cpp}
+{\xe \v main.cpp\:_szHeight}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int _szHeight}}
+\par
+{\bkmkstart AAAAAAAACV}
+{\bkmkend AAAAAAAACV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 121 of file main.cpp.}\par
+{
+Referenced by _tmain(), and filter().}\par
+}
+{\xe \v _szWidth\:main.cpp}
+{\xe \v main.cpp\:_szWidth}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int _szWidth}}
+\par
+{\bkmkstart AAAAAAAACW}
+{\bkmkend AAAAAAAACW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 121 of file main.cpp.}\par
+{
+Referenced by _tmain(), and filter().}\par
+}
+{\xe \v base\:main.cpp}
+{\xe \v main.cpp\:base}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int base}}
+\par
+{\bkmkstart AAAAAAAACX}
+{\bkmkend AAAAAAAACX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 108 of file main.cpp.}\par
+{
+Referenced by _tmain(), createDrawWindow(), and drawModel().}\par
+}
+{\xe \v delta\:main.cpp}
+{\xe \v main.cpp\:delta}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int delta}}
+\par
+{\bkmkstart AAAAAAAACY}
+{\bkmkend AAAAAAAACY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 121 of file main.cpp.}\par
+{
+Referenced by _tmain(), and filter().}\par
+}
+{\xe \v fontFace\:main.cpp}
+{\xe \v main.cpp\:fontFace}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int fontFace}}
+\par
+{\bkmkstart AAAAAAAACZ}
+{\bkmkend AAAAAAAACZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 113 of file main.cpp.}\par
+{
+Referenced by createDrawWindow(), and drawModel().}\par
+}
+{\xe \v height\:main.cpp}
+{\xe \v main.cpp\:height}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int height}}
+\par
+{\bkmkstart AAAAAAAADA}
+{\bkmkend AAAAAAAADA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 108 of file main.cpp.}\par
+{
+Referenced by _tmain(), createDrawWindow(), and drawModel().}\par
+}
+{\xe \v left_text\:main.cpp}
+{\xe \v main.cpp\:left_text}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int left_text}}
+\par
+{\bkmkstart AAAAAAAADB}
+{\bkmkend AAAAAAAADB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 115 of file main.cpp.}\par
+{
+Referenced by createDrawWindow(), and drawModel().}\par
+}
+{\xe \v offsetX\:main.cpp}
+{\xe \v main.cpp\:offsetX}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int offsetX}}
+\par
+{\bkmkstart AAAAAAAADC}
+{\bkmkend AAAAAAAADC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 109 of file main.cpp.}\par
+{
+Referenced by _tmain(), createDrawWindow(), and drawModel().}\par
+}
+{\xe \v offsetY\:main.cpp}
+{\xe \v main.cpp\:offsetY}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int offsetY}}
+\par
+{\bkmkstart AAAAAAAADD}
+{\bkmkend AAAAAAAADD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 110 of file main.cpp.}\par
+{
+Referenced by _tmain(), createDrawWindow(), and drawModel().}\par
+}
+{\xe \v radius\:main.cpp}
+{\xe \v main.cpp\:radius}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int radius}}
+\par
+{\bkmkstart AAAAAAAADE}
+{\bkmkend AAAAAAAADE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 107 of file main.cpp.}\par
+{
+Referenced by _tmain(), createDrawWindow(), and drawModel().}\par
+}
+{\xe \v scale\:main.cpp}
+{\xe \v main.cpp\:scale}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int scale}}
+\par
+{\bkmkstart AAAAAAAADF}
+{\bkmkend AAAAAAAADF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 114 of file main.cpp.}\par
+{
+Referenced by createDrawWindow(), and drawModel().}\par
+}
+{\xe \v sizeCols\:main.cpp}
+{\xe \v main.cpp\:sizeCols}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int sizeCols}}
+\par
+{\bkmkstart AAAAAAAADG}
+{\bkmkend AAAAAAAADG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 116 of file main.cpp.}\par
+{
+Referenced by _tmain(), and createDrawWindow().}\par
+}
+{\xe \v sizeRows\:main.cpp}
+{\xe \v main.cpp\:sizeRows}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int sizeRows}}
+\par
+{\bkmkstart AAAAAAAADH}
+{\bkmkend AAAAAAAADH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 117 of file main.cpp.}\par
+{
+Referenced by _tmain(), and createDrawWindow().}\par
+}
+{\xe \v text_offsetX\:main.cpp}
+{\xe \v main.cpp\:text_offsetX}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int text_offsetX}}
+\par
+{\bkmkstart AAAAAAAADI}
+{\bkmkend AAAAAAAADI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 111 of file main.cpp.}\par
+{
+Referenced by createDrawWindow(), and drawModel().}\par
+}
+{\xe \v text_offsetY\:main.cpp}
+{\xe \v main.cpp\:text_offsetY}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int text_offsetY}}
+\par
+{\bkmkstart AAAAAAAADJ}
+{\bkmkend AAAAAAAADJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 112 of file main.cpp.}\par
+{
+Referenced by createDrawWindow(), and drawModel().}\par
+}
+{\xe \v type\:main.cpp}
+{\xe \v main.cpp\:type}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string type}}
+\par
+{\bkmkstart AAAAAAAADK}
+{\bkmkend AAAAAAAADK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line 118 of file main.cpp.}\par
+{
+Referenced by _tmain().}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+stdafx.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v stdafx.cpp}
+{\xe \v stdafx.cpp}
+{\bkmkstart AAAAAAAADL}
+{\bkmkend AAAAAAAADL}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "stdafx.h"}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Include dependency graph for stdafx.cpp:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "stdafx_8cpp__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+stdafx.h File Reference\par \pard\plain 
+{\tc\tcl2 \v stdafx.h}
+{\xe \v stdafx.h}
+{\bkmkstart AAAAAAAADM}
+{\bkmkend AAAAAAAADM}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "targetver.h"}\par
+{\f2 #include <stdio.h>}\par
+{\f2 #include <tchar.h>}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Include dependency graph for stdafx.h:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "stdafx_8h__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid This graph shows which files directly or indirectly include this file:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "stdafx_8h__dep__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+targetver.h File Reference\par \pard\plain 
+{\tc\tcl2 \v targetver.h}
+{\xe \v targetver.h}
+{\bkmkstart AAAAAAAADN}
+{\bkmkend AAAAAAAADN}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <SDKDDKVer.h>}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Include dependency graph for targetver.h:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "targetver_8h__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid This graph shows which files directly or indirectly include this file:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "targetver_8h__dep__incl.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

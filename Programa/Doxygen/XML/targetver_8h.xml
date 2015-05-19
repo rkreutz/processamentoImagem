@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="targetver_8h" kind="file">
+    <compoundname>targetver.h</compoundname>
+    <includes local="no">SDKDDKVer.h</includes>
+    <includedby refid="stdafx_8h" local="yes">stdafx.h</includedby>
+    <incdepgraph>
+      <node id="83">
+        <label>SDKDDKVer.h</label>
+      </node>
+      <node id="82">
+        <label>targetver.h</label>
+        <link refid="targetver.h"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="86">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="85">
+        <label>stdafx.h</label>
+        <link refid="stdafx_8h"/>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>targetver.h</label>
+        <link refid="targetver.h"/>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>stdafx.cpp</label>
+        <link refid="stdafx_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Incluir<sp/>SDKDDKVer.h<sp/>define<sp/>a<sp/>plataforma<sp/>Windows<sp/>mais<sp/>alta<sp/>disponível.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Se<sp/>você deseja<sp/>compilar<sp/>sua<sp/>aplicação<sp/>para<sp/>versões anteriores<sp/>de<sp/>plataformas<sp/>Windows,<sp/>inclua<sp/>WinSDKVer.h<sp/>e</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ajuste<sp/>a<sp/>macro<sp/>_WIN32_WINNT<sp/>para<sp/>a<sp/>plataforma<sp/>que<sp/>você deseja<sp/>suportar<sp/>antes<sp/>de<sp/>incluir<sp/>SDKDDKVer.h.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SDKDDKVer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Rodrigo/Documents/C_C++/Processamento de Imagem/Teste/Programa/Programa/targetver.h"/>
+  </compounddef>
+</doxygen>
