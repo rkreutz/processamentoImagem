@@ -1,0 +1,6 @@
+﻿  main.cpp
+c:\users\rodrigo\documents\c_c++\processamento de imagem\teste\histograms\histograms\main.cpp(77): warning C4244: 'inicializando' : conversão de 'int' para 'float', possível perda de dados
+c:\users\rodrigo\documents\c_c++\processamento de imagem\teste\histograms\histograms\main.cpp(146): warning C4244: 'inicializando' : conversão de 'int' para 'float', possível perda de dados
+c:\users\rodrigo\documents\c_c++\processamento de imagem\teste\histograms\histograms\main.cpp(214): warning C4244: 'inicializando' : conversão de 'int' para 'float', possível perda de dados
+c:\users\rodrigo\documents\c_c++\processamento de imagem\teste\histograms\histograms\main.cpp(310): warning C4244: 'inicializando' : conversão de 'int' para 'float', possível perda de dados
+  Histograms.vcxproj -> C:\Users\Rodrigo\Documents\C_C++\Processamento de Imagem\Teste\Histograms\Debug\Histograms.exe
